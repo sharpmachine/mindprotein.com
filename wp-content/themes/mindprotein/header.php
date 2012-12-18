@@ -32,11 +32,6 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
     	<!-- Le styles -->
     	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
-    	<style>
-      	body {
-        	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      	}
-    	</style>
     	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -59,33 +54,31 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="<?php bloginfo('url') ?>"><?php bloginfo('name'); ?></a>
-					<div class="nav-collapse">
-            			<ul class="nav">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
-            			</ul>
-					</div><!--/.nav-collapse -->
-        		</div>
-			</div>
-    	</div>
+	<div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container" id="top-nav">
+      	<ul class="nav pull-right">
+					<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
+				</ul>
+      </div>
+    </div>
+  </div>
 
-		<!-- Breadcrumbs NavXT-->
-		<div class="breadcrumbs">
-			<?php
-			if(function_exists('bcn_display'))
-			{
-		    	bcn_display();
-			}
-			?>
-		</div>
+ 	<div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+      	<div class="row">
+      		<div class="span6">
+      			<img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
+      		</div>
+      		<div class="span6 pull-right" id="middle-nav">
+      			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
 
-    	<div class="container">
-			<div class="row">
+    <div class="container">
+			
