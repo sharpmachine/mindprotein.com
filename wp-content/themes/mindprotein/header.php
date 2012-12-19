@@ -31,6 +31,7 @@
 	
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
     	<!-- Le styles -->
+    	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
     	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -54,31 +55,39 @@
 
 	<body <?php body_class(); ?>>
 
-	<div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container" id="top-nav">
-      	<ul class="nav pull-right">
-					<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
-				</ul>
-      </div>
-    </div>
-  </div>
+		<header>
 
- 	<div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container">
-      	<div class="row">
-      		<div class="span6">
-      			<img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
-      		</div>
-      		<div class="span6 pull-right" id="middle-nav">
-      			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
-      		</div>
-      	</div>
-      </div>
-    </div>
-  </div>
+			<div class="navbar navbar-inverse">
+		    <div class="navbar-inner">
+		      <div class="container">
+		      	<div class="row">
+		      		<div class="span12" id="top-nav">
+				      	<ul class="nav pull-right">
+									<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
+									<li><a href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
+								</ul>
+							</div>
+						</div>
+		      </div>
+		    </div>
+		  </div>
 
-    <div class="container">
+
+		 	<div class="navbar navbar-inverse">
+		    <div class="navbar-inner">
+		      <div class="container">
+		      	<div class="row">
+		      		<div class="span5" id="img-position">
+		      			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+		      		</div>
+		      		<div class="span7 middle-nav" id="middle-nav">
+		      			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+
+   <div class="container">
 			

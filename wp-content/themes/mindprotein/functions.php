@@ -64,9 +64,12 @@ function smm_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation', 'smm' ),
+		'footer' => __( 'Footer Navigation', 'smm' ),
 	) );
 }
 endif;
+
+
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.

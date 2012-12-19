@@ -2,27 +2,138 @@
 Project Name: Mind Protein
 */
 
+/* ...................................the font families */
+.raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* ...................................the header*/
+
+// Header
+
+header {
+	border-top: solid 2px #424242;
+	border-bottom: solid 2px #3b3b3b;
+}
+
+
+// Navigation
 .navbar .nav > li > a
 	{
-		padding-bottom: 0;
-		padding-top: 3px;
+		padding: 7px 0px 0px 55px;
 	}
 
 #top-nav {
 	font-size: 12px;
+	text-transform: uppercase;
+	padding-bottom: 2px;
 
 	img {
-		padding-bottom: 6px;
+		padding: 0px 5px 6px 0px;
+	}
+
+	ul.nav {
+			margin-right: 10px;
+
+		li {
+			margin-left: -15px;
+
+			a {
+				color: @grayLight;
+
+			}
+		}
 	}
 }
 
+#img-position {
+
+	img {
+ 				position: relative;
+ 				top: -16px;
+ 				margin-left: -19px;
+
+ 			}
+}
+
 #middle-nav {
-		padding-top: 60px;
-		text-transform:uppercase;
+	padding-top: 50px;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+
+	ul {
+
+		li {
+			padding-left: 2px;
+			
+		}
+	}
+}
+
+#menu-primary_navigation {
+	float: right;
+}
+
+// Logo
+
+/* ...................................the footer*/
+
+// Footer
+footer {
+	height: 305px;
+	color: @grayLight;
+	font-size: 12px;
+	background: @grayDark;
+	border-top: solid 2px #f2f1f1;	
+
+	a:hover {
+		color: @white;
 	}
 
+	a {
+		color: @grayLight;
+	}
+}
 
+.footer-top {
+	padding: 32px 0 17px 0;
+	border-bottom: solid 1px #545454;
 
+	.span5 {
+		margin-left: -4px;
+	}
+	.span3 {
+		margin-right: -41px;
+	}
+}
+
+.nav-footer {
+	margin-left: 3px;
+
+	li {
+		display: block;
+		float: left;
+		padding: 0 21px 0px 3px;
+	}
+}
+
+.footer-bottom {
+	border-top: solid 1px #303030;
+	padding: 12px 0 5px 0;
+
+	.span4 {
+		margin-left: 4px;
+
+	}
+	.span3 {
+		margin-right: -70px;
+	}
+}
+
+.nav-footer{
+	list-style: none;
+}
+/* ...................................the image utilities */
 img.size-auto,
 img.size-full,
 img.size-large,

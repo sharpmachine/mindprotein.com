@@ -1,12 +1,23 @@
     
 		</div> <!-- /container -->
-		<footer role="contentinfo">
+		<footer>
 			<div class="container">
-				<div id="site-info">
-					&copy;<?php echo date ('Y'); ?><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?></a>
-					 | <a href="http://twitter.github.com/bootstrap" target="_blank">Bootstrap Docs</a><!-- Remove for production -->
-				</div><!-- #site-info -->
+				<div class="row footer-top">
+					<div class="span5">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false, 'menu_class' => 'nav-footer' ) ); ?>
+					</div>
+					<div class="span3 pull-right">
+						<a href="mailto:support@mindprotein.com">support@mindprotein.com</a> | 877-251-1586
+					</div>
+				</div>
+				<div class="row footer-bottom">
+					<div class="span4">
+						&copy; Copyright <?php echo date ('Y'); ?>. <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>.</a>
+					</div>
+					<div class="span3 pull-right">
+						960 Grand Ave. San Diego, CA 97006
+					</div>
+				</div>
 			</div>
 		</footer>
 

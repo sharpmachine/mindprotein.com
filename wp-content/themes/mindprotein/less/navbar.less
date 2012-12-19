@@ -10,7 +10,6 @@
 .navbar {
   overflow: visible;
   margin-bottom: 0;
-  color: @navbarText;
 
   // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
   *position: relative;
@@ -54,7 +53,7 @@
   margin-left: -20px; // negative indent to left-align the text down the page
   font-size: 14px;
   font-weight: 200;
-  color: @navbarBrandColor;
+  
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
   &:hover {
     text-decoration: none;
@@ -390,7 +389,7 @@
     color: @navbarInverseLinkColor;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
     &:hover {
-      color: @navbarInverseLinkColorHover;
+      color: @grayLight;
     }
   }
 

@@ -402,6 +402,9 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  .container {
+    max-width: 1170px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
@@ -918,7 +921,7 @@
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: #777777;
+    color: #ffffff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -939,7 +942,7 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: #999999;
+    color: #ffffff;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
