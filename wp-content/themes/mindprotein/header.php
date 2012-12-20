@@ -71,8 +71,7 @@
 		      </div>
 		    </div>
 		  </div>
-
-
+		  
 		 	<div class="navbar navbar-inverse">
 		    <div class="navbar-inner">
 		      <div class="container">
@@ -80,14 +79,13 @@
 		      		<div class="span5" id="img-position">
 		      			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
 		      		</div>
-		      		<div class="span7 middle-nav" id="middle-nav">
+		      		<div class="span7" id="middle-nav">
 		      			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
 		      		</div>
 		      	</div>
 		      </div>
 		    </div>
 		  </div>
+		  
 		</header>
-
-   <div class="container">
 			

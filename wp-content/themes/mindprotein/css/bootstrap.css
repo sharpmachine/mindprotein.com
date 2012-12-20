@@ -824,7 +824,7 @@ input[type="color"],
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
-  color: #555555;
+  color: #8f8f8f;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2555,6 +2555,7 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  text-transform: uppercase;
 }
 .btn:hover,
 .btn:active,
@@ -2672,20 +2673,21 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-color: #d6d6d6;
+  background-image: -moz-linear-gradient(top, #d6d6d6, #d6d6d6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d6d6d6), to(#d6d6d6));
+  background-image: -webkit-linear-gradient(top, #d6d6d6, #d6d6d6);
+  background-image: -o-linear-gradient(top, #d6d6d6, #d6d6d6);
+  background-image: linear-gradient(to bottom, #d6d6d6, #d6d6d6);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffd6d6d6', GradientType=0);
+  border-color: #d6d6d6 #d6d6d6 #b0b0b0;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0044cc;
+  *background-color: #d6d6d6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #7b7b7b;
 }
 .btn-primary:hover,
 .btn-primary:active,
@@ -2693,12 +2695,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #d6d6d6;
+  *background-color: #c9c9c9;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #bdbdbd \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -2717,6 +2719,7 @@ input[type="button"].btn-block {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #ffe77a;
 }
 .btn-warning:hover,
 .btn-warning:active,
@@ -3037,7 +3040,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #d6d6d6;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3274,7 +3277,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: #555555;
+  color: #8f8f8f;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -3363,8 +3366,8 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #fff;
 }
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #8f8f8f;
+  border-bottom-color: #8f8f8f;
 }
 .nav > .dropdown.active > a:hover {
   cursor: pointer;
@@ -3711,7 +3714,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #8f8f8f;
   text-decoration: none;
   background-color: #e5e5e5;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -3810,7 +3813,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #e5e5e5;
-  color: #555555;
+  color: #8f8f8f;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #ffffff;
@@ -3819,8 +3822,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #8f8f8f;
+  border-bottom-color: #8f8f8f;
 }
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
@@ -4515,7 +4518,7 @@ a.thumbnail:hover {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #8f8f8f;
 }
 .media,
 .media-body {
@@ -4999,7 +5002,7 @@ header {
 #img-position img {
   position: relative;
   top: -16px;
-  margin-left: -19px;
+  margin-left: -8px;
 }
 #middle-nav {
   padding-top: 50px;
@@ -5056,6 +5059,69 @@ footer a {
 }
 .nav-footer {
   list-style: none;
+}
+/* ...................................the content*/
+.section-one {
+  height: 445px;
+  border-bottom: solid 5px #ececec;
+  background-color: #000;
+  padding: 0;
+}
+.second-section {
+  color: #8f8f8f;
+  border-bottom: solid 1px #d1d1d1;
+}
+.second-section .row {
+  padding: 30px 0 42px 0;
+}
+.second-section .row img {
+  position: relative;
+  left: 42%;
+}
+.second-section .row .span4 {
+  text-align: justify;
+  font-size: 14px;
+}
+.second-section .row .pad {
+  padding-right: 0px;
+}
+.second-section .row h2 {
+  color: #006e93;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 36px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  margin: 0px;
+  text-align: center;
+}
+.second-section .row div {
+  padding-top: 23px;
+  padding-bottom: -90px;
+  text-align: center;
+}
+.third-section {
+  margin-top: 34px;
+}
+.third-section .row {
+  padding-bottom: 18px;
+  border: solid 1px #000;
+}
+.third-section h2 {
+  color: #ffb300;
+  padding-top: 27px;
+  padding-bottom: 3px;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 36px;
+}
+.third-section .span5 {
+  padding-left: 27px;
+}
+.third-section .span5 div {
+  padding-top: 62px;
+}
+.third-section .span7 {
+  padding: 0;
+  margin: 0;
 }
 /* ...................................the image utilities */
 img.size-auto,
