@@ -5449,7 +5449,8 @@ form#searchform input[type="text"] {
 /* ...................................the coaching */
 .coachingone {
   color: #fff;
-  background-color: #000;
+  background-color: #707070;
+  border-bottom: solid 1px #000;
 }
 .coachingone .span6 {
   font: 18px/30px 'Raleway', sans-serif;
@@ -5502,6 +5503,364 @@ form#searchform input[type="text"] {
   background-color: #959595;
   margin-top: 29px;
   margin-bottom: 60px;
+}
+.coachingtwo {
+  text-align: center;
+  background: url(../img/background_02.png);
+  border-bottom: solid 1px #d1d1d1;
+}
+.coachingtwo .span12 {
+  color: #616161;
+  font-size: 30px;
+  margin-top: 13px;
+}
+.coachingtwo .span12 .imgPositioning {
+  position: relative;
+  left: 0;
+  top: 50px;
+}
+.coachingtwo .span12 .positionShadow {
+  margin: 20px 0 19px 0;
+}
+.coachingtwo .span12 .btn {
+  width: 249px;
+  margin: 0 26px 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d05100;
+  background-image: -moz-linear-gradient(top, #da5c00, #c24100);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5c00), to(#c24100));
+  background-image: -webkit-linear-gradient(top, #da5c00, #c24100);
+  background-image: -o-linear-gradient(top, #da5c00, #c24100);
+  background-image: linear-gradient(to bottom, #da5c00, #c24100);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda5c00', endColorstr='#ffc24100', GradientType=0);
+  border-color: #c24100 #c24100 #762700;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #c24100;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: solid 1px #9c3a00;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  box-shadow: 0px 0px 5px #c7c6c6;
+  vertical-align: middle;
+}
+.coachingtwo .span12 .btn:hover,
+.coachingtwo .span12 .btn:active,
+.coachingtwo .span12 .btn.active,
+.coachingtwo .span12 .btn.disabled,
+.coachingtwo .span12 .btn[disabled] {
+  color: #ffffff;
+  background-color: #c24100;
+  *background-color: #a93800;
+}
+.coachingtwo .span12 .btn:active,
+.coachingtwo .span12 .btn.active {
+  background-color: #8f3000 \9;
+}
+.coachingtwo .span12 span {
+  font-weight: bold;
+}
+.coachingtwo .span3 {
+  margin-bottom: 59px;
+}
+.coachingtwo .span3 .btn {
+  min-width: 230px;
+  min-height: 133px;
+  color: #fff;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #008da7;
+  background-image: -moz-linear-gradient(top, #00a2c0, #006e82);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00a2c0), to(#006e82));
+  background-image: -webkit-linear-gradient(top, #00a2c0, #006e82);
+  background-image: -o-linear-gradient(top, #00a2c0, #006e82);
+  background-image: linear-gradient(to bottom, #00a2c0, #006e82);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00a2c0', endColorstr='#ff006e82', GradientType=0);
+  border-color: #006e82 #006e82 #002d35;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #006e82;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: solid 1px #027288;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  box-shadow: 0px 0px 5px #c7c6c6;
+}
+.coachingtwo .span3 .btn:hover,
+.coachingtwo .span3 .btn:active,
+.coachingtwo .span3 .btn.active,
+.coachingtwo .span3 .btn.disabled,
+.coachingtwo .span3 .btn[disabled] {
+  color: #ffffff;
+  background-color: #006e82;
+  *background-color: #005869;
+}
+.coachingtwo .span3 .btn:active,
+.coachingtwo .span3 .btn.active {
+  background-color: #00434f \9;
+}
+.coachingtwo .span3 .right-mar {
+  margin-right: 30px;
+}
+.coachingtwo .span3 .littleShadows {
+  padding-top: 8px;
+}
+.coachingthree {
+  margin-top: 60px;
+}
+.coachingthree div {
+  color: #595959;
+  font: 22px/30px 'Sanchez', sans-serif;
+}
+.coachingthree h2 {
+  padding-bottom: 9px;
+  color: #006d93;
+  font-size: 48px;
+  font-weight: 100;
+}
+.coachingthree ul {
+  padding-left: 20px;
+  color: #6f6f6f;
+  font-family: 'Raleway', sans-serif;
+  list-style-image: url(../img/coachingCheckMarkSM.png);
+}
+.coachingthree ul h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.coachingthree li {
+  font-size: 14px;
+  line-height: 24px;
+}
+.coachingfour {
+  height: 125px;
+  color: #616161;
+  font: 30px 'Raleway', sans-serif;
+  vertical-align: bottom;
+  background: url(../img/background_02.png);
+  border-top: solid 1px #d3d3d3;
+  border-bottom: solid 46px #3c3c3c;
+}
+.coachingfour .btn {
+  width: 249px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d05100;
+  background-image: -moz-linear-gradient(top, #da5c00, #c24100);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5c00), to(#c24100));
+  background-image: -webkit-linear-gradient(top, #da5c00, #c24100);
+  background-image: -o-linear-gradient(top, #da5c00, #c24100);
+  background-image: linear-gradient(to bottom, #da5c00, #c24100);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda5c00', endColorstr='#ffc24100', GradientType=0);
+  border-color: #c24100 #c24100 #762700;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #c24100;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: solid 1px #9c3a00;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  box-shadow: 0px 0px 5px #c7c6c6;
+  text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
+}
+.coachingfour .btn:hover,
+.coachingfour .btn:active,
+.coachingfour .btn.active,
+.coachingfour .btn.disabled,
+.coachingfour .btn[disabled] {
+  color: #ffffff;
+  background-color: #c24100;
+  *background-color: #a93800;
+}
+.coachingfour .btn:active,
+.coachingfour .btn.active {
+  background-color: #8f3000 \9;
+}
+.coachingfour span {
+  font-weight: bold;
+}
+.coachingfive {
+  color: #6f6f6f;
+}
+.coachingfive h2 {
+  color: #006d93;
+  font: 48px 'Sanchez', sans-serif;
+}
+.coachingfive p {
+  color: #595959;
+  font: 20px 'Sanchez', sans-serif;
+}
+.coachingfive h3 {
+  color: #595959;
+  font: 20px 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.coachingfive li {
+  color: #6f6f6f;
+  font: 14px/24px 'Raleway', sans-serif;
+  list-style-image: url(../img/coachingCheckMarkSM.png);
+}
+.coachingfive .infoEmpire {
+  font: 14px/24px 'Raleway', sans-serif;
+}
+.coachingfive h4 {
+  color: #ff7800;
+  font: 24px 'Sanchez', sans-serif;
+  font-weight: 100;
+}
+.coachingfive .liveEvents {
+  max-width: 570px;
+  height: 338px;
+  padding: 8px 26px 5px 28px;
+  background: #f3f3f3;
+  border: solid 13px #fff;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  box-shadow: 0px 0px 5px #c7c6c6;
+}
+.coachingfive .liveEvents li {
+  color: #666565;
+  list-style-image: url(../img/coachingBlueArrowIcon.png);
+}
+.coachingfive .span9 p {
+  color: #6f6f6f;
+  font: 14px 'Raleway', sans-serif;
+}
+.coachingfive .btn {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fed85d;
+  background-image: -moz-linear-gradient(top, #ffe77a, #fdc232);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe77a), to(#fdc232));
+  background-image: -webkit-linear-gradient(top, #ffe77a, #fdc232);
+  background-image: -o-linear-gradient(top, #ffe77a, #fdc232);
+  background-image: linear-gradient(to bottom, #ffe77a, #fdc232);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe77a', endColorstr='#fffdc232', GradientType=0);
+  border-color: #fdc232 #fdc232 #e0a002;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #fdc232;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #b58000;
+  border: solid 1px #ffb300;
+  -moz-box-shadow: 0px 3px  5px #c7c6c6;
+  -webkit-box-shadow: 0px 3px  5px #c7c6c6;
+  box-shadow: 0px 3px  5px #c7c6c6;
+}
+.coachingfive .btn:hover,
+.coachingfive .btn:active,
+.coachingfive .btn.active,
+.coachingfive .btn.disabled,
+.coachingfive .btn[disabled] {
+  color: #ffffff;
+  background-color: #fdc232;
+  *background-color: #fdba19;
+}
+.coachingfive .btn:active,
+.coachingfive .btn.active {
+  background-color: #fab202 \9;
+}
+.coachingfive .center-buttons {
+  text-align: center;
+}
+.coachingsix {
+  color: #5f5f5f;
+  font: 26px 'Sanchez', sans-serif;
+  background: url(../img/background_02.png);
+  border-top: solid 1px #d8d8d8;
+}
+.coachingsix .whiteBK {
+  background: #fff;
+}
+.coachingsix h2 {
+  color: #c34100;
+  font-size: 48px;
+}
+.coachingsix .coachingForm {
+  width: 373px;
+  margin: 64px -50px 0 70px;
+  font: 14px 'Raleway', sans-serif;
+}
+.coachingsix .coachingForm div {
+  color: #d2d2d2;
+  font: 11px/24px 'Raleway', sans-serif;
+}
+.coachingsix .coachingForm div a {
+  color: #8c8c8c;
+  text-decoration: underline;
+}
+.coachingsix .coachingForm input[type="text"] {
+  height: 37px;
+  font-size: 20px;
+}
+.coachingsix .coachingForm .btn {
+  color: #fff;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d05100;
+  background-image: -moz-linear-gradient(top, #da5c00, #c24100);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#da5c00), to(#c24100));
+  background-image: -webkit-linear-gradient(top, #da5c00, #c24100);
+  background-image: -o-linear-gradient(top, #da5c00, #c24100);
+  background-image: linear-gradient(to bottom, #da5c00, #c24100);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffda5c00', endColorstr='#ffc24100', GradientType=0);
+  border-color: #c24100 #c24100 #762700;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #c24100;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: solid 1px #9c3a00;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  box-shadow: 0px 0px 5px #c7c6c6;
+}
+.coachingsix .coachingForm .btn:hover,
+.coachingsix .coachingForm .btn:active,
+.coachingsix .coachingForm .btn.active,
+.coachingsix .coachingForm .btn.disabled,
+.coachingsix .coachingForm .btn[disabled] {
+  color: #ffffff;
+  background-color: #c24100;
+  *background-color: #a93800;
+}
+.coachingsix .coachingForm .btn:active,
+.coachingsix .coachingForm .btn.active {
+  background-color: #8f3000 \9;
+}
+.coachingsix .darkenBK {
+  width: 520px;
+  font: 26px 'Sanchez', sans-serif;
+  background: #eeeeee;
+  margin: 8px;
+  padding: 50px;
+}
+.coachingsix .darkenBK li {
+  margin-left: 0px;
+  list-style-image: url(../img/coachingCheckmarkLG.png);
+}
+.coachingsix .darkenBK .borderBottom {
+  border-bottom: solid 1px #000;
 }
 /* ...................................the image utilities */
 img.size-auto,
