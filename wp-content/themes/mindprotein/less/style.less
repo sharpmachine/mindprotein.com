@@ -589,7 +589,6 @@ form#searchform {
   		-moz-box-shadow: 0px 0px 5px #c7c6c6;
 		  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
 			box-shadow: 0px 0px 5px #c7c6c6;
-			vertical-align: middle;
 		}
 
 		span {
@@ -629,6 +628,22 @@ form#searchform {
 		font: 22px/30px 'Sanchez', sans-serif;
 	}
 
+	.videoHolder {
+		display: inline;
+		float: right;
+		width: 470px;
+		height: 300px;
+		margin: 0 auto ;
+
+		.video {
+			width: 100%;
+			margin: 0 auto ;
+			-moz-box-shadow: 0px 0px 5px #c7c6c6;
+		  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+			box-shadow: 0px 0px 5px #c7c6c6;
+		}	
+	}
+
 	h2 {
 		padding-bottom: 9px;
 		color: #006d93;
@@ -656,13 +671,13 @@ form#searchform {
 }
 
 .coachingfour {
-	height: 125px;
 	color: #616161;
 	font: 30px 'Raleway', sans-serif;
-	vertical-align: bottom;
+	line-height: 171px;
 	background: url(../img/background_02.png);
 	border-top: solid 1px #d3d3d3;
-	border-bottom: solid 46px #3c3c3c;
+	border-bottom: solid 1px #d3d3d3;
+	//border-bottom: solid 46px #3c3c3c;
 
 	.btn {
 		width: 249px;
@@ -682,12 +697,19 @@ form#searchform {
 		font-weight: bold;
 	}
 
+	img {
+			position: relative;
+			left: 0;
+			top: 50px;
+		}
+
 }
 
 .coachingfive {
 	color: #6f6f6f;
 
 	h2 {
+		margin-top: 68px;
 		color: #006d93;
 		font: 48px 'Sanchez', sans-serif;
 	}
@@ -695,6 +717,10 @@ form#searchform {
 	p {
 		color: #595959;
 		font: 20px 'Sanchez', sans-serif;
+	}
+
+	.span8 {
+		margin-top: -2px;
 	}
 
 	h3 {
@@ -709,7 +735,12 @@ form#searchform {
 		list-style-image: url(../img/coachingCheckMarkSM.png);
 	}
 
+	.coachingShadowS5 {
+		margin-top: 19px;
+	}
+
 	.infoEmpire {
+		margin-bottom: 46px;
 		font: 14px/24px 'Raleway', sans-serif;
 	}
 
@@ -721,7 +752,7 @@ form#searchform {
 
 	.liveEvents {
 		max-width: 570px;
-		height: 338px;
+		height: 300px;
 		padding: 8px 26px 5px 28px;
 		background: #f3f3f3;
 		border: solid 13px #fff;
@@ -732,20 +763,30 @@ form#searchform {
 
 		li {
 			color: #666565;
+			font: 14px @sansFontFamily;
 			list-style-image: url(../img/coachingBlueArrowIcon.png);
+			padding-bottom: 6px;
 		}
 	}
 
+	.prodigyBorder {
+		border-top: dashed 1px @grayLighter;
+		margin-top: 51px;
+	}
+
 	.span9 {
+		margin-top: 45px;
+
 		p {
+			padding-top: 17px;
 			color: #6f6f6f;
-			font: 14px 'Raleway', sans-serif;
+			font: 14px/24px 'Raleway', sans-serif;
 		}
 	}
 
 	.btn {
-		.buttonBackground(#ffe77a, #fdc232);
-		color: #b58000;
+		.buttonBackground(#ffea89, #fdc130);
+		color: #b47f00;
 		border: solid 1px #ffb300;
 		-moz-box-shadow: 0px 3px  5px #c7c6c6;
 	  -webkit-box-shadow: 0px 3px  5px #c7c6c6;
@@ -753,7 +794,12 @@ form#searchform {
 	}
 
 	.center-buttons {
+		margin-top: 79px;
 		text-align: center;
+	}
+
+	.span3 {
+		margin-top: 11px;
 	}
 }
 
@@ -765,16 +811,27 @@ form#searchform {
 
 	.whiteBK {
 		background: #fff;
+		min-height: 420px;
+
+		.span4 {
+			margin-bottom: 27px;
+		}
+
+		input[type="checkbox"]{
+			font-size: 48px;
+		}
 	}
 
 	h2 {
+		margin: 68px 0 35px;
 		color: #c34100;
 		font-size: 48px;
+		font-weight: 200;
 	}
 
 	.coachingForm {
 		width: 373px;
-		margin: 64px -50px 0 70px;
+		margin: 64px 0 0 70px;
 		font: 14px 'Raleway', sans-serif;
 
 		div {
@@ -793,34 +850,273 @@ form#searchform {
 		}
 
 		.btn {
+			width: 257px;
 			color: #fff;
+			font: 25px @sansFontFamily;
   		.buttonBackground(#da5c00, #c24100);
   		border: solid 1px #9c3a00;
   		-moz-box-shadow: 0px 0px 5px #c7c6c6;
 		  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
 			box-shadow: 0px 0px 5px #c7c6c6;
+			text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -1px;
 		}
 	}
 
 	.darkenBK {
-		width: 520px;
+		max-width: 520px;
 		font: 26px 'Sanchez', sans-serif;
 		background: #eeeeee;
 		margin: 8px;
 		padding: 50px;
 
+		ul {
+		
+		}
+
 		li {
-			margin-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			font: 26px @sansFontFamilyTwo;
+			font-weight: 100;
 			list-style-image: url(../img/coachingCheckmarkLG.png);
 		}
 
 		.borderBottom {
-				border-bottom: solid 1px #000;
+				border-bottom: solid 1px @grayLighter;
 		}
 	}
 }
 
 
+/* ...................................the case studies */
+.case-studies-one {
+	padding: 26px 0 44px;
+	text-shadow: 1px 1px 3px #000;
+	.buttonBackground(#464646, #838383);
+	-moz-box-shadow: 0px 0px 5px #c7c6c6;
+  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+	box-shadow: 0px 0px 5px #c7c6c6;
+	border-top: solid 1px #3b3b3b;
+	border-bottom: solid 1px #888888;
+
+	.span12 {
+		color: @white;
+		font: 18px/30px @sansFontFamily;
+		text-shadow: 1px 1px 3px #000;
+	}
+
+	h2 {
+		color: @white;
+		font: 40px @sansFontFamilyTwo;
+		text-shadow: 1px 1px 3px #000;
+	}
+}
+
+.case-studies-two {
+	text-align: center;
+
+	.btn {
+		width: 230px;
+		height: 110px;
+		margin: 45px 30px 0 0;
+		color: #fff;
+		font: 16px @sansFontFamily;
+		font-weight: lighter;
+		line-height: 30px;
+		.buttonBackground(#ffbd0d, #ff8a00);
+		border: solid 1px #ffb300;
+		-moz-box-shadow: 0px 3px 5px #c7c6c6;
+	  -webkit-box-shadow: 0px 3px 5px #c7c6c6;
+		box-shadow: 0px 3px 5px #c7c6c6;
+	}
+
+	.littleShadows {
+			padding: 5px 0 37px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+}
+
+#bg-image {
+	background: url(../img/background_02.png);
+}
+
+.case-studies-three {
+
+	.container {
+		background: #fff;
+		-moz-box-shadow: 0px 0px 10px #bfbfbf;
+	  -webkit-box-shadow: 0px 0px 10px #bfbfbf;
+		box-shadow: 0px 0px 10px #bfbfbf;
+	}
+
+	h2 {
+		margin: 40px 0 -5px;
+		padding: 0;
+		color: @blueH2;
+		font: 48px @sansFontFamilyTwo;
+	}
+
+	h3 {
+		margin: 0 0 14px;
+		color: @blueH2;
+		font: 36px @sansFontFamilyTwo;
+	}
+
+	.span12 {
+		padding-left: 30px;
+
+		.video {
+			display: inline;
+			float: right;
+			width: 568px;
+			height: 342px;
+			margin: 0 30px 0 30px;
+			text-align: center;
+			.buttonBackground(#dadada, #a9a9a9);
+			border: solid 1px #cacaca;
+		}
+
+		.font-sub-heading {
+			padding-bottom: 7px;
+			color: @grayDarkerFont;
+			font: 24px @sansFontFamilyTwo;
+			border-bottom: dashed 1px @grayLighter;
+		}
+
+		.pad-text {
+			padding-top: 9px;
+		}
+
+		img {
+			margin: 31px 20px 17px 0;
+		}
+
+		p {
+			margin-right: 101px;
+			color: @grayFont;
+			font: 14px/24px @sansFontFamily;
+		}
+
+		.fullWidthShadow {
+			padding-top: 31px;
+			position: relative;
+			left: -30px;
+		}
+	}
+
+	.top-margin {
+		margin-top: -102px;
+	}
+
+	.span6 {
+
+		h2 {
+			font-family: @sansFontFamily;
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		a {
+			color: @grayLightFont;
+			font-family: @sansFontFamily;
+			font-size: 18px;
+			font-weight: 100;
+		}
+	}
+
+//.bottom-border {
+//	border-bottom: dashed 1px @grayLight;
+//}
+
+//.right-border {
+//	width: 553px;
+//	margin:0 -100px 0 90px;
+//	padding:0;
+//	border-right: dashed 1px @grayLight;
+//}
+}
+
+/* ...................................the blog */
+
+.blog-one {
+
+	h2 {
+		color: @blueH2;
+		font: 24px @sansFontFamilyTwo;
+	}
+
+	.author-date {
+		color: @grayDarkFont;
+		font: 12px @sansFontFamily;
+		text-transform: uppercase;
+		border-bottom: dashed 1px @grayLighter;
+	}
+
+	span {
+		color: @blue;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.blog-content {
+		color: @grayDarkFont;
+		font: 14px/20px @sansFontFamily;
+	}
+
+	.discussions {
+		font-weight: bold;
+		background-color: #dbdbdb;
+
+		h3 {
+			color: #676767;
+			font: 15px @sansFontFamily;
+		}
+
+		li {
+			color: @grayDarkFont;
+			font: 14px @sansFontFamily;
+		}
+
+		.btn {
+			color: @white;
+			font: 14px @sansFontFamily;
+			.buttonBackground(#14a9c4, #007185);
+  		border: solid 1px #027288;
+		}
+	}
+}
+
+.blog-two {
+	h2 {
+		color: @blueH2;
+		font: 36px @sansFontFamilyTwo;
+	}
+
+	.author-date {
+		color: @grayDarkFont;
+		font: bold 12px/24px @sansFontFamily;
+		text-transform: uppercase;
+		border-bottom: dashed 1px @grayLighter;
+	}
+
+	span {
+		color: @blue;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.blog-content {
+		color: @grayDarkFont;
+		font: 14px/20px @sansFontFamily;
+	}
+
+	.span2 {
+		background-color: #ebebeb;
+		width: 170px;
+		height: 170px;
+	}
+}
 
 
 /* ...................................the image utilities */

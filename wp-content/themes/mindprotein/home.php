@@ -103,7 +103,7 @@
 									<span>Read more >></span>
 								</div>
 								<div class="span2">
-									
+									Social
 								</div>
 							</div>
 							<div class="row bottom-border spacing-articles">

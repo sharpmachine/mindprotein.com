@@ -26,6 +26,7 @@ Template Name: Coaching
 		</div>
 	</div>
 </div>
+
 <div class="coachingtwo">
 	<div class="container">
 		<div class="row">
@@ -72,13 +73,12 @@ Template Name: Coaching
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<!-- <div class="row">
-					<div class="span5 pull-right">
-						<div class="video-container">
-						
-					  </div>
+				<div class="videoHolder">
+					<div class="video">
+						Video
 					</div>
-				</div> -->
+					<img src="<?php bloginfo('template_directory'); ?>/img/coachingVideoShadow.png" />
+				</div>
 				<h2>Coaching & Support</h2>
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
 				<ul>
@@ -156,7 +156,7 @@ Template Name: Coaching
 		</div>
 		<div class="row">
 			<div class="span12">
-				<img src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS5.png">
+				<img class="coachingShadowS5" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS5.png">
 			</div>
 		</div>
 		<div class="row">
@@ -193,7 +193,7 @@ Template Name: Coaching
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row prodigyBorder">
 			<div class="span9">
 				<img src="<?php bloginfo('template_directory'); ?>/img/coachingMindProteinProdigy.png">
 				<p>
@@ -230,7 +230,7 @@ Template Name: Coaching
 				  <input type="text" class="span4" placeholder="password">
 				  <label class="checkbox">
 				  <input type="checkbox">Sign Up For Newsletter <br/>
-				  <button type="submit" class="btn btn-primary btn-large">Apply Now | ></button>
+				  <button type="submit" class="btn btn-primary btn-large pull-right">Apply Now | ></button>
 				  </label>
 				</form>
 				<div>By clicking the Apply Now button, you agree to the <a href="">Terms of Service</a></div>
