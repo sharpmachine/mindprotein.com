@@ -5,13 +5,22 @@
 	<div class="section-one">
 		<div class="container">
 			<div class="row" >
-				<div class="span12" >
-					
-				</div>
+				<div class="span12" id="mcts1">
+			       	<?php if(get_field('hero_unit_banners','option')): ?>
+						<?php while (has_sub_field('hero_unit_banners','option')): ?>
+							<div class="each">	
+								<img src="<?php the_sub_field('hero_banner_image','option') ?>" alt="">
+								<div class="content">
+									<?php the_sub_field('hero_caption','option') ?>
+								</div><!-- .content -->
+							 </div><!-- .each -->
+				      	<?php endwhile; ?>
+					<?php endif; ?>
+				</div><!-- #mcts1 -->
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="second-section">
 		<div class="container">
 			<div class="row">
