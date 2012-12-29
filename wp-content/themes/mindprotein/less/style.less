@@ -399,7 +399,7 @@ form#searchform {
 /* ...................................the about page */
 
 .aboutone {
-	background: #000;
+	#gradient > .vertical(#464646, #ababab);
 	color:#fff;
 	padding: 27px 0 81px 0;
 	font-size: 18px;
@@ -436,7 +436,7 @@ form#searchform {
 			padding-bottom: 48px;
 
 			.darkbox {
-				background-color: #c1c1c1;
+				#gradient > .vertical(#e5e5e5, #a9a9a9);
 				width: 570px;
 				height: 365px;
 				margin: -36px -35px 0 61px;
@@ -457,7 +457,7 @@ form#searchform {
 	}
 
 	.meetteam {
-		background-color: #f0f0f0;
+		background-color: @grayLightBK;
 		height: 354px;
 		border: solid 1px #e4e4e4;
 	}
@@ -1024,61 +1024,124 @@ form#searchform {
 			font-weight: 100;
 		}
 	}
-
-//.bottom-border {
-//	border-bottom: dashed 1px @grayLight;
-//}
-
-//.right-border {
-//	width: 553px;
-//	margin:0 -100px 0 90px;
-//	padding:0;
-//	border-right: dashed 1px @grayLight;
-//}
 }
 
 /* ...................................the blog */
+.shadowBar {
+	.box-shadow(15px 0px 6px -6px #efefef);
+}
+
+.trending-post,
+	.content {
+		width: 920px !important;
+	}
 
 .blog-one {
+	padding: 49px 0 42px;
+	background-color: #ebebeb;
+	.box-shadow(0 7px 6px -2px #c7c6c6);
+
+	.span6 {
+		min-height: 400px;
+		margin-right: -1px;
+		background-color: #fff;
+
+		img {
+			.box-shadow(0 10px 6px -6px #c7c6c6);
+		}
+	}
 
 	h2 {
+		padding: 2px 0 0px 19px;
 		color: @blueH2;
-		font: 24px @sansFontFamilyTwo;
+		font: 23px @sansFontFamilyTwo;
 	}
 
 	.author-date {
+		padding-bottom: 11px;
+		margin:0 30px 0 19px ;
 		color: @grayDarkFont;
 		font: 12px @sansFontFamily;
+		font-weight: bold;
 		text-transform: uppercase;
 		border-bottom: dashed 1px @grayLighter;
 	}
 
-	span {
+	.author {
 		color: @blue;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 
+	.social-media {
+		padding: 10px 0 7px 19px;
+	}
+
 	.blog-content {
+		padding: 0 30px 30px 19px;
 		color: @grayDarkFont;
 		font: 14px/20px @sansFontFamily;
 	}
 
-	.discussions {
-		font-weight: bold;
+	.span3 {
+		width: 250px;
+		padding: 10px;
 		background-color: #dbdbdb;
 
 		h3 {
 			color: #676767;
 			font: 15px @sansFontFamily;
+			font-weight: bold;
+		}
+
+		.graySpace {
+			width: 100%;
+			height: 80px;
+			background-color: #7b7b7b;
+		}
+
+		.discuss-list {
+			text-align: center;
+			padding: 21px 0 26px;
+			background-color: #fff;
+
+			ol {
+				padding-left: 30px;
+
+				li {
+					margin-bottom: 20px;
+					line-height: 0.3;
+					border-bottom: 1px dashed @gray;
+
+					span {
+						position: relative;
+						top: -15px;
+					}
+				}
+			}
+		}
+
+		ul {
+			
 		}
 
 		li {
-			color: @grayDarkFont;
-			font: 14px @sansFontFamily;
+			color: #d0d0d0;
+			margin: 0 10px;
+			font:bold 36px arial;
+			text-align: left;
+			border-bottom: dashed 1px @grayLighter;
+
+			span {
+				color: @grayDarkFont;
+				font: 14px @sansFontFamily;
+				padding: -50px 0 -50px;
+				font-weight: bold;
+			}
 		}
 
 		.btn {
+			padding: 12px 30px;
 			color: @white;
 			font: 14px @sansFontFamily;
 			.buttonBackground(#14a9c4, #007185);
@@ -1089,11 +1152,15 @@ form#searchform {
 
 .blog-two {
 	h2 {
+		margin-bottom: -2px;
+		padding-top: 44px;
 		color: @blueH2;
 		font: 36px @sansFontFamilyTwo;
 	}
 
 	.author-date {
+		margin-bottom: 20px;
+		padding-bottom: 12px;
 		color: @grayDarkFont;
 		font: bold 12px/24px @sansFontFamily;
 		text-transform: uppercase;
@@ -1106,6 +1173,10 @@ form#searchform {
 		text-transform: uppercase;
 	}
 
+	.blog-list {
+		padding-bottom: 57px;
+	}
+
 	.blog-content {
 		color: @grayDarkFont;
 		font: 14px/20px @sansFontFamily;
@@ -1113,8 +1184,146 @@ form#searchform {
 
 	.span2 {
 		background-color: #ebebeb;
-		width: 170px;
-		height: 170px;
+		.size(170px, 170px);
+	}
+}
+
+
+/* ...................................the image utilities */
+
+
+.loopOne {
+	background-color: #fff;
+
+	.socialImage {
+			margin-top: 15px;
+			.box-shadow(0 2px 2px 2px #c7c6c6);
+		}
+
+	.socialMedia {
+		margin-top: 20px;
+		background-color: #ebebeb;
+
+		.shareThis {
+			padding: 10px 11px;
+			color:;
+			font: 700 12px @sansFontFamily;
+			text-transform: uppercase;
+			background-color: #dcdcdc;
+		}
+
+		.facebook {
+			margin: 0 11px;
+			padding: 7px 0 2px;
+			background-color: #ebebeb;
+			border-bottom: dashed 1px @grayLighter;
+		}
+
+		.socialSharing {
+			padding: 4px 11px 20px;
+			background-color: #ebebeb;
+		}
+	}
+
+	h1 {
+		margin-bottom: 0;
+		color: @blueH2;
+		font: 36px @sansFontFamilyTwo;
+	}
+
+	.entry-meta {
+		color: @grayDarkFont;
+		font: bold 12px/30px @sansFontFamily;
+		text-transform: uppercase;
+		border-bottom: dashed 1px @grayLighter;
+		padding-bottom: 3px;
+
+		a {
+			color: @blueLightFont;
+		}
+	}
+
+	.entry-content {
+		margin-top: 27px;
+
+		p {
+			color: @grayDarkFont;
+			font: 14px/24px @sansFontFamily;
+		}
+
+		h1 {
+			color: @blueH2;
+			font: 700 24px/60px @sansFontFamily;
+		}
+
+		h2 {
+			color: @grayH2;
+			font: 700 24px/60px @sansFontFamily;
+		}
+
+		ol {
+			color: @grayLI;
+			font: bold 14px @sansFontFamily;
+		}
+
+		ul {
+			color: @grayLI;
+			font: 14px/30px @sansFontFamily;
+			list-style-image: url(../img/singlePostCheckmark.png);
+		}
+
+		li {
+			line-height: 30px;
+			margin-left: 100px;
+		}
+
+		blockquote {
+			color: @grayLI;
+			font: 14px/30px @sansFontFamily;
+			font-style: italic;
+			background-image: url(../img/quotesLeft.png);
+			border-left: 0px;
+			padding-left: 48px;
+		  //background-image: url(../img/quotesRight.png);
+		  background-position: top left;
+		  background-repeat: no-repeat;
+		  //text-indent: 23px;
+		}
+	}
+
+	#entry-author-info {
+		float: left;
+		padding: 20px 18px;
+		#gradient > .vertical(#f0f0f0, #e6e6e6);
+		border: solid 1px #e3e3e3;
+		.box-shadow(0px 0px 8px 2px #e6e6e6);
+
+		#author-description {
+			margin: 0;
+			color: @grayDarkFont;
+			font: 14px/24px @sansFontFamily;
+		}
+
+		h2 {
+			color: @blueH2;
+			font: 24px/24px @sansFontFamilyTwo;
+		}
+
+		#author-link {
+			margin-top: 30px;
+			color: @grayDarkFont;
+			font: 500 16px @sansFontFamily;
+
+			img {
+				float: none;
+				margin-left: 5px;
+			}
+		}
+
+		img {
+			float: left;
+			margin-right: 15px;
+		}
 	}
 }
 

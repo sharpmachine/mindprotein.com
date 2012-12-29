@@ -12,43 +12,71 @@
  */
 ?>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<!-- Facebook Like JavaScript SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook Like JavaScript SDK -->
 
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+	<div class="container">
+		<div class="row loopOne">
+			<div class="span9">
 
-					<div class="entry-meta">
-						<?php smm_posted_on(); ?>
-					</div><!-- .entry-meta -->
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'smm' ), 'after' => '</div>' ) ); ?>
-					</div><!-- .entry-content -->
+									<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+										<h1 class="entry-title"><?php the_title(); ?></h1>
 
-<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-					<div id="entry-author-info">
-						<div id="author-avatar">
-							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'smm_author_bio_avatar_size', 60 ) ); ?>
-						</div><!-- #author-avatar -->
-						<div id="author-description">
-							<h2><?php printf( esc_attr__( 'About %s', 'smm' ), get_the_author() ); ?></h2>
-							<?php the_author_meta( 'description' ); ?>
-							<div id="author-link">
-								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" rel="author">
-									<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'smm' ), get_the_author() ); ?>
-								</a>
-							</div><!-- #author-link	-->
-						</div><!-- #author-description -->
-					</div><!-- #entry-author-info -->
-<?php endif; ?>
+										<div class="entry-meta">
+											<?php smm_posted_on(); ?>
+										</div><!-- .entry-meta -->
 
-					<div class="entry-utility">
-						<?php smm_posted_in(); ?>
-					</div><!-- .entry-utility -->
-				</div><!-- #post-## -->
+										<div class="span3 pull-right">
+											<div class="socialMedia">
+												<div class="shareThis">Share This Story</div>
+												<div class="facebook">
+													<div class="fb-like" data-href="https://www.facebook.com/MindProtein" data-send="false" data-width="100%" data-show-faces="false"></div>
+												</div>
+												<div class="socialSharing">Social Sharing</div>
+											</div>
+											<img class="socialImage" src="<?php bloginfo('template_directory');?>/img/blogPicture.png" />
+										</div>
+
+										<div class="entry-content">
+											<?php the_content(); ?>
+											<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'smm' ), 'after' => '</div>' ) ); ?>
+										</div><!-- .entry-content -->
+
+										<div id="entry-author-info">
+											<div id="author-description">
+												<h2>Ralph Plumb, Founder, MindProtein.com</h2>
+												<img src="<?php bloginfo('template_directory');?>/img/ralphPlumb.png" />
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+												<div id="author-link">
+													Connect with Ralph: 
+													<a href="https://www.facebook.com/MindProtein"><img src="<?php bloginfo('template_directory');?>/img/facebookIcon.png" /></a>
+													<a href="https://twitter.com/mindprotein"><img src="<?php bloginfo('template_directory');?>/img/twitterIcon.png" /></a>
+													<a href="http://us.linkedin.com/company/mindprotein.com"><img src="<?php bloginfo('template_directory');?>/img/linkedinIcon.png" /></a>
+												
+												</div><!-- #author-link	-->
+											</div><!-- #author-description -->
+										</div><!-- #entry-author-info -->
+
+										<div class="entry-utility">
+											
+										</div><!-- .entry-utility -->
+									</div><!-- #post-## -->
 
 
-				<?php comments_template( '', true ); ?>
+									<?php comments_template( '', true ); ?>
 
-<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
+
+			</div>
+		</div>
+	</div>

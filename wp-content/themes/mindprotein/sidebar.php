@@ -1,5 +1,5 @@
-<section id="sidebar">
-	
+<div id="sidebar" class="span3">
+	<!-- <div class="span3"> -->
 		<ul class="unstyled">
 
 		<?php
@@ -45,5 +45,5 @@
 
 	<?php endif; ?>
 
-
-</section><!-- #sidebar -->
+	<!-- </div> -->
+</div><!-- #sidebar -->

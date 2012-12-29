@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<section id="page" class="span8">
+		<section id="page" class="span9">
 
 			<?php
 			/* Run the loop to output the post.
