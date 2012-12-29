@@ -27,31 +27,28 @@
 				<div class="span4 pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/about-us.png">
 					<h2>About Us</h2>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<div>
-						<a class="btn btn-primary btn-small">
-							More | >
-						</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="btn-group">
+						<a href="<?php bloginfo('url'); ?>/about" class="btn btn-primary btn-small">More</a>
+						<a href="<?php bloginfo('url'); ?>/about" class="btn btn-primary btn-small">></a>
 					</div>
 				</div>
 				<div class="span4 pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/community.png">
 					<h2>Community</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<div>
-						<a class="btn btn-primary btn-small">
-							More | >
-						</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="btn-group">
+						<a href="<?php bloginfo('url'); ?>/community" class="btn btn-primary btn-small">More</a>
+						<a href="<?php bloginfo('url'); ?>/community" class="btn btn-primary btn-small">></a>
 					</div>
 				</div>
 				<div class="span4">
 					<img src="<?php bloginfo('template_directory'); ?>/img/coaching.png">
 					<h2>Coaching</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<div>
-						<a class="btn btn-primary btn-small">
-							More | >
-						</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="btn-group">
+						<a href="<?php bloginfo('url'); ?>/coaching" class="btn btn-primary btn-small">More</a>
+						<a href="<?php bloginfo('url'); ?>/coaching" class="btn btn-primary btn-small">></a>
 					</div>
 				</div>
 			</div>
@@ -63,19 +60,34 @@
 			<div class="row third-first">
 				<div class="span5">
 					<h2>Case Studies</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicom ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<div>
-						<a class="btn btn-primary btn-medium">
-							View All Case Studies >
-						</a>
-						<a class="btn btn-primary btn-medium">
-							Discuss Case Studies | >
-						</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicom ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+					
+					<div class="btn-group">
+						<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">View All Case Studies</a>
+						<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">></a>
 					</div>
+					<div class="btn-group">
+						<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">Discuss Case Studies</a>
+						<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">></a>
+					</div>
+					
 				</div>
 				<div class="span7">
 					<div class="video-container">
-						
+						<div class="video-player">
+							
+						</div>
+						<div class="video-thumbs">
+							<a href="<?php bloginfo('url'); ?>/case-studies">
+								<img src="<?php bloginfo('template_directory'); ?>/img/video-thumb1.jpg" alt="Thumbnail" width="135" height="75">
+							</a>
+							<a href="<?php bloginfo('url'); ?>/case-studies">
+								<img src="<?php bloginfo('template_directory'); ?>/img/video-thumb2.jpg" alt="Thumbnail" width="135" height="75">
+							</a>
+							<a href="<?php bloginfo('url'); ?>/case-studies">
+								<img src="<?php bloginfo('template_directory'); ?>/img/video-thumb3.jpg" alt="Thumbnail" width="135" height="75">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -84,8 +96,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/img/twitter-icon.png">
 				</div>
 				<div class="span11">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					<span>bit.ly/dfiauhsdf78</span>
+					<div id="tweet"></div>
 				</div>
 			</div>
 		</div>

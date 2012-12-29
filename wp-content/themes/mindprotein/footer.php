@@ -36,6 +36,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-carousel.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-typeahead.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/slider.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/tweet.js"></script>
 
 	<!-- scripts concatenated and minified via ant build script-->
 	<script src="<?php bloginfo ('template_directory'); ?>/js/plugins.js"></script>
