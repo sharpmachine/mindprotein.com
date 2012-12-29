@@ -10,7 +10,7 @@
 						<?php while (has_sub_field('hero_unit_banners','option')): ?>
 							<div class="each">	
 								<img src="<?php the_sub_field('hero_banner_image','option') ?>" alt="">
-								<div class="content">
+								<div class="slider-content">
 									<?php the_sub_field('hero_caption','option') ?>
 								</div><!-- .content -->
 							 </div><!-- .each -->

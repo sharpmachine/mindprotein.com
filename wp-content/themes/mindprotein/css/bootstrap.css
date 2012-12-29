@@ -6549,7 +6549,7 @@ a.read-more {
   background-color: transparent;
   border-radius: 6px;
 }
-#mcts1 .each .content {
+#mcts1 .each .slider-content {
   position: absolute;
   top: 65px;
   left: 30px;
@@ -6566,7 +6566,7 @@ a.read-more {
   font-size: 22px;
   text-shadow: 1px 1px 1px #000000;
 }
-#mcts1 .each .content strong {
+#mcts1 .each .slider-content strong {
   display: block;
   line-height: 1;
   font-size: 40px;
