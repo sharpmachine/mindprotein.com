@@ -106,7 +106,7 @@ add_filter( 'excerpt_length', 'smm_excerpt_length' );
  * @return string "Continue Reading" link
  */
 function smm_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'smm' ) . '</a>';
+	return ' <a class="read-more" href="'. get_permalink() . '">' . __( 'Read More <span class="meta-nav">&raquo;</span>', 'smm' ) . '</a>';
 }
 
 /**
@@ -443,3 +443,16 @@ function getgo_method() {
 }    
  
 add_action('wp_enqueue_scripts', 'getgo_method');
+
+function get_tweets($url) {     
+  $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
+  $json = json_decode($json_string, true);
+  return intval( $json['count'] );
+}
+
+
+function get_likes($url) {
+  $json_string = file_get_contents('http://graph.facebook.com/?ids=' . $url);
+  $json = json_decode($json_string, true);
+  return intval( $json[$url]['shares'] );
+} 

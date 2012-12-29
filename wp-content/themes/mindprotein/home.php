@@ -109,8 +109,16 @@
 					<div class="row">
 						<div class="span9">
 							<div class="row">
+							<?php query_posts('showposts=1'); ?>
+							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							
+							
+							
+							
+							
+							
 								<div class="span9 space9">
-									<h2>Business Developement 101: Hiring a Designer</h2>
+									<h2><?php the_title(); ?></h2>
 									<div>By <span>Ralph Plumb</span>, October 1, 2012</div>
 								</div>
 							</div>
@@ -119,13 +127,20 @@
 									<img src="<?php bloginfo('template_directory'); ?>/img/finger-typing-lg.png">
 								</div>
 								<div class="span4">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com- modo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-									<span>Read more >></span>
+									<?php the_excerpt(); ?>
 								</div>
 								<div class="span2">
-									Social
+									<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
 								</div>
 							</div>
+							
+							<?php endwhile; ?>
+							<!-- post navigation -->
+							<?php else: ?>
+							<!-- no posts found -->
+							<?php endif; ?>
+							
+							
 							<div class="row bottom-border spacing-articles">
 								<div class="span1">	
 									<img src="<?php bloginfo('template_directory'); ?>/img/finger-typing-sm2.png">
@@ -133,6 +148,9 @@
 								<div class="span3">
 									<h3>Why Startups Shouldn’t Ignore Social Media</h3>
 									<div>Like / Tweet</div>
+									
+									<?php echo get_tweets("http://www.flight.org/blog/2012/04/22/gear-up-landings-and-pilot-error/"); ?>
+									<?php echo get_likes("http://www.flight.org/blog/2012/04/22/gear-up-landings-and-pilot-error/"); ?>
 								</div>
 								<div class="span1">
 								</div>

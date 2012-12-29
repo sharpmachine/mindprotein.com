@@ -45,6 +45,37 @@
 	<!-- Remove these before deploying to production -->
 	<script src="<?php bloginfo ('template_directory'); ?>/js/hashgrid.js" type="text/javascript"></script>
 
+	<script type="text/javascript">
+		(function($){
+			$.fn.fblikecount = function(options){
+				var defaults = {
+					baseUrl: 'http://graph.facebook.com/?ids='
+				};
+				var options = $.extend(defaults, options);
+				var count = 0;
+				return this.each(function(){
+					var $this = $(this);
+					$this.hide();
+					var objLink = $(this).attr('title');
+					if(objLink.indexOf('http') === 0){
+						$.getJSON(defaults.baseUrl + objLink + '&callback=?', function(json){
+							if(json[objLink] && json[objLink].shares){
+								$this.html(json[objLink].shares);
+								$this.show();
+							}
+						});				
+					}
+				});
+			}
+		})(jQuery);
+	</script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('span.likebox').fblikecount();
+		});
+	</script>	
+
 <?php wp_footer(); ?>
 	</body>
 </html>
