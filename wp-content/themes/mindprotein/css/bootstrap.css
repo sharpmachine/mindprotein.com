@@ -6482,6 +6482,24 @@ img.alignright,
 img.aligncenter {
   margin-bottom: 12px;
 }
+.navbar #middle-nav li.current_page_item,
+.navbar #middle-nav li.current-menu-item {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #ffb400;
+}
+.navbar #middle-nav li {
+  margin-left: 55px;
+}
+.navbar #middle-nav li:first-child {
+  margin-left: 0;
+}
+.navbar #middle-nav li a {
+  padding: 0;
+}
+#middle-nav {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
 #tweet ul {
   list-style: none;
   margin: 0;
