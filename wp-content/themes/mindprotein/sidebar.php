@@ -1,24 +1,47 @@
 <div id="sidebar" class="span3">
-	<!-- <div class="span3"> -->
-		<ul class="unstyled">
 
-		<?php
-		/* When we call the dynamic_sidebar() function, it'll spit out
-			* the widgets for that widget area. If it instead returns false,
-			* then the sidebar simply doesn't exist, so we'll hard-code in
-			* some default sidebar stuff just in case.
-			*/
-			if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+	<ul class="unstyled">
+
+		<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 
 			<li id="search" class="widget-container widget_search">
 				<?php get_template_part('searchform'); ?>
 			</li>
 
 		<?php endif; // end primary widget area ?>
-		</ul>
+	</ul>
+	
+	<hr class="style-two">
+	
+	<ul class="list6 clearfix">
+		<li class="css3 clearfix">
+			<a href="/feed" target="_blank">
+				<img src="http://wphub.terranmarketing.netdna-cdn.com/wp-content/themes/wphub/resources/images/theme/icons/rss-icon.jpg" alt="rss"/>
+		616 <?php diww_fb_sub_value('wphubcom'); ?> </a>
+			<small>Subscribers</small>
+		</li>
+		<li class="css3 alt clearfix">
+			<a href="http://twitter.com/wphub" target="_blank">
+				<img src="http://wphub.terranmarketing.netdna-cdn.com/wp-content/themes/wphub/resources/images/theme/icons/twitter-icon.jpg" alt="twitter"/>
+		2648 <?php diww_twitter_followers ('wphub'); ?> </a>
+			<small>Followers</small>
+		</li>
+		<li class="css3 clearfix">
+			<a href="http://www.facebook.com/wphubcom" target="_blank">
+				<img src="http://wphub.terranmarketing.netdna-cdn.com/wp-content/themes/wphub/resources/images/theme/icons/facebook-icon.jpg" alt="facebook"/>
+		1089 <?php diww_fb_fan_count ('133757063302440'); ?></a>
+			<small>Fans</small>
+		</li>
+		<li class="css3 alt clearfix">
+			<a href="http://plus.google.com/b/100314060360968565545/" target="_blank">
+				<img src="http://wphub.terranmarketing.netdna-cdn.com/wp-content/themes/wphub/resources/images/theme/icons/google-icon.jpg" alt="google"/>
+		136</a>
+			<small>Public +1's</small>
+		</li>
+	</ul>
 
 		<div class="sign-up ">
-			<hr class="style-two">
+			
 			<hr class="style-two">
 			<h3>Sign Up for Our Newsletter</h3>
 			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -31,19 +54,4 @@
 
 </div><!-- #primary .widget-area -->
 
-
-
-	<?php
-	// A second sidebar for widgets, just because.
-		if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
-	<div id="secondary" class="widget-area" role="complementary">
-		<ul class="xoxo">
-			<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-		</ul>
-	</div><!-- #secondary .widget-area -->
-
-	<?php endif; ?>
-
-	<!-- </div> -->
 </div><!-- #sidebar -->
