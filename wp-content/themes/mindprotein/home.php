@@ -71,8 +71,21 @@
 			</div>
 			<div class="span7">
 				<div class="video-container">
-					<div class="video-player">
-						<?php echo do_shortcode('[S3_embed_video file="' . get_field ('video_url' , 'option') . '" width="460" height="255"]'); ?>
+					<div id="video-player">
+						<div id="video">
+							<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
+
+							<script type='text/javascript'>
+							var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','460','255','9');
+							  so.addParam('allowfullscreen','false');
+							  so.addParam('allowscriptaccess','always');
+							  so.addParam('wmode','opaque');
+							  so.addVariable('file','http://davesfiles.s3.amazonaws.com/march16_mp_promo.mp4');
+							     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
+							  so.addVariable('autostart','false');
+							  so.write('video');
+							</script>
+						</div>
 					</div>
 					<div class="video-thumbs">
 						<a href="<?php bloginfo('url'); ?>/case-studies">
@@ -141,9 +154,10 @@
 								<div class="small-article-title">
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 									<div class="sm-counter">
-										<span class="likes"><?php echo get_tweets("http://www.flight.org/blog/2012/04/22/gear-up-landings-and-pilot-error/"); ?></span>
+									 <?php $permalink = get_post_permalink(); ?>
+										<span class="likes"><?php echo get_tweets($permalink); ?></span>
 										<span class="retweets">
-											<?php echo get_likes("http://www.flight.org/blog/2012/04/22/gear-up-landings-and-pilot-error/"); ?>
+											<?php echo get_likes($permalink); ?>
 										</span>
 									</div>
 									

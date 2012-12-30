@@ -5292,7 +5292,7 @@ footer a {
   background-image: -ms-linear-gradient(left, rgba(205, 205, 205, 0.25), #cdcdcd, rgba(205, 205, 205, 0.25));
   background-image: -o-linear-gradient(left, rgba(205, 205, 205, 0.25), #cdcdcd, rgba(205, 205, 205, 0.25));
 }
-.side-bar .sign-up h3 {
+.side-bar h3 {
   font: 17px/18px 'Sanchez', sans-serif;
   color: #ffb400;
   padding: 10px 0 7px 0;
@@ -6479,7 +6479,7 @@ a.read-more {
   height: 258px;
   padding: 19px 15px;
 }
-.video-player {
+#video-player {
   float: left;
   width: 460px;
   height: 255px;

@@ -1,6 +1,7 @@
 <?php
 
 include 'functions/customize-admin.php';
+include('functions/socialCounter.php');
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -455,68 +456,4 @@ function get_likes($url) {
   $json_string = file_get_contents('http://graph.facebook.com/?ids=' . $url);
   $json = json_decode($json_string, true);
   return intval( $json[$url]['shares'] );
-} 
-
-// Get Facebook Fan Count //
-
-function diww_fb_fan_count($fb_id){
-         $count = get_transient('fan_count');
-    if ($count !== false) return $count;
-         $count = 0;
-         $data = wp_remote_get('http://api.facebook.com/restserver.php?method=facebook.fql.query&query=SELECT%20fan_count%20FROM%20page%20WHERE%20page_id='.$fb_id.'');
-   if (is_wp_error($data)) {
-         return 'Error getting number';
-   }else{
-         $count = strip_tags($data[body]);
-   }
-set_transient('fan_count', $count, 60*60*24); // 24 hour cache
-echo $count;
-}
-
-function diww_twitter_followers ($twitter_user) {
-
-	 $url="http://twitter.com/users/show.xml?screen_name=". $twitter_user;
-	 $ch = curl_init();
-	 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	 curl_setopt($ch, CURLOPT_URL, $url);
-	 $data = curl_exec($ch);
-
-	 curl_close($ch);
-	 $xml = new SimpleXMLElement($data);
-	 $tw_fol_count = $xml->followers_count;
-	 if ($tw_fol_count == false) { echo '512'; }
-	 else { echo number_format($tw_fol_count); }
-
-}
-
-// Get RSS Subscriber Count //
-
-function diww_fb_count ($fb_user) {
-
-	$fburl="https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=". $fb_user;
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_URL, $fburl);
-	$stored = curl_exec($ch);
-	curl_close($ch);
-	$grid = new SimpleXMLElement($stored);
-	$rsscount = $grid->feed->entry['circulation']+0;
-	return number_format($rsscount);
-
-}
-
-function diww_fb_count_run($feed) {
-
-	$fb_subs = diww_fb_count ($feed);
-	$fb_option = "diww_fb_sub_value";
-	$fb_subscount = get_option($fb_option);
-	if (is_null($fb_subs)) { return $fb_subscount; }
-	else {update_option($fb_option, $fb_subs); return $fb_subs;}
-
-}
-
-function diww_fb_sub_value($feed) {
-
-	echo diww_fb_count_run($feed);
-
 }
