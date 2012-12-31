@@ -5303,9 +5303,12 @@ footer a {
   margin: 0;
 }
 /* ...................................the sidebar */
+div.singlePost > div.container > div.row > div.span3.side-bar {
+  margin-left: -20px;
+  padding: 0;
+}
 .side-bar {
   margin: 36px 0 0;
-  padding: 0 0 0;
   color: #8f8f8f;
   font-size: 12px;
   line-height: 18px;
@@ -5323,46 +5326,25 @@ footer a {
 .side-bar h3 {
   font: 17px/18px 'Sanchez', sans-serif;
   color: #ffb400;
-  padding: 10px 0 7px 0;
+  padding: 10px 0 7px;
 }
 .side-bar .sign-up .navbar-form {
-  margin-top: 17px;
+  margin: 17px 40px 0 0;
 }
 .side-bar .sign-up .navbar-form .btn-primary {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #fed14f;
-  background-image: -moz-linear-gradient(top, #fdc233, #ffe77a);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdc233), to(#ffe77a));
-  background-image: -webkit-linear-gradient(top, #fdc233, #ffe77a);
-  background-image: -o-linear-gradient(top, #fdc233, #ffe77a);
-  background-image: linear-gradient(to bottom, #fdc233, #ffe77a);
+  background-color: #fed85e;
+  background-image: -moz-linear-gradient(top, #ffe77a, #fdc233);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe77a), to(#fdc233));
+  background-image: -webkit-linear-gradient(top, #ffe77a, #fdc233);
+  background-image: -o-linear-gradient(top, #ffe77a, #fdc233);
+  background-image: linear-gradient(to bottom, #ffe77a, #fdc233);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdc233', endColorstr='#ffffe77a', GradientType=0);
-  border-color: #ffe77a #ffe77a #ffd92e;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #ffe77a;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe77a', endColorstr='#fffdc233', GradientType=0);
   color: #b58000;
   border: solid 1px #ffb300;
-  -moz-box-shadow: 0px 3px  5px #c7c6c6;
-  -webkit-box-shadow: 0px 3px  5px #c7c6c6;
-  box-shadow: 0px 3px  5px #c7c6c6;
-}
-.side-bar .sign-up .navbar-form .btn-primary:hover,
-.side-bar .sign-up .navbar-form .btn-primary:active,
-.side-bar .sign-up .navbar-form .btn-primary.active,
-.side-bar .sign-up .navbar-form .btn-primary.disabled,
-.side-bar .sign-up .navbar-form .btn-primary[disabled] {
-  color: #ffffff;
-  background-color: #ffe77a;
-  *background-color: #ffe261;
-}
-.side-bar .sign-up .navbar-form .btn-primary:active,
-.side-bar .sign-up .navbar-form .btn-primary.active {
-  background-color: #ffde47 \9;
+  -webkit-box-shadow: 0px 3px 5px #c7c6c6;
+  -moz-box-shadow: 0px 3px 5px #c7c6c6;
+  box-shadow: 0px 3px 5px #c7c6c6;
 }
 form#searchform input[type="submit"] {
   background: url(../img/search.png);
@@ -6481,7 +6463,7 @@ form#searchform input[type="text"] {
   background-color: #ebebeb;
 }
 .loopOne h1 {
-  margin-bottom: 0;
+  margin: 39px 0 0;
   color: #006d93;
   font: 36px 'Sanchez', sans-serif;
 }
@@ -6570,6 +6552,16 @@ form#searchform input[type="text"] {
 .loopOne #entry-author-info img {
   float: left;
   margin-right: 15px;
+}
+.singlePost {
+  margin-top: 12px;
+}
+.singlePost .rightShadow {
+  margin-right: 10px;
+  padding-right: 30px;
+  -webkit-box-shadow: 12px 0px 8px -3px #f8f8f8;
+  -moz-box-shadow: 12px 0px 8px -3px #f8f8f8;
+  box-shadow: 12px 0px 8px -3px #f8f8f8;
 }
 /* ...................................the image utilities */
 img.size-auto,

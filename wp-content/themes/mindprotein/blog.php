@@ -76,8 +76,9 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
--------------------------------------------------------------------------------
-<!-- <div id="page" class="container">
+<!------------------------------------------------------------------- old code
+
+ <div id="page" class="container">
 <div class="span9 content shadowBar">
 	<div class="trending-post blog-one">
 		<div class="span9">
