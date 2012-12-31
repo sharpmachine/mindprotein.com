@@ -1,13 +1,29 @@
 <?php get_header(); ?>
 
-		<section id="page" class="span8">
+		<section id="page">
 
-			<h1 class="page-title"><?php
-				printf( __( 'Tag Archives: %s', 'smm' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-			?></h1>
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="span9">
 
-<?php get_template_part( 'loop', 'tag' ); ?>
+							<h1 class="page-title"><?php
+								printf( __( 'Tag Archives: %s', 'smm' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+							?></h1>
+
+							<?php get_template_part( 'loop', 'tag' ); ?>
+
+							</div>
+							<div class="span3">
+								
+								<?php get_sidebar(); ?>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</section><!-- #page -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
