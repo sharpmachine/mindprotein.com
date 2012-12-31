@@ -12,8 +12,9 @@ Template Name: Coaching
 	<div class="container">
 		<div class="row">
 			<div class="span6">
-				<h2>Business Coaching Program</h2>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php the_content(); ?>
+				<?php endwhile; endif; ?>
 				<div class="btn-group">
 					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-large">
 						Student Case Studies

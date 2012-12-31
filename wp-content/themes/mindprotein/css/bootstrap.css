@@ -5409,7 +5409,7 @@ form#searchform input[type="text"] {
   background-image: linear-gradient(to bottom, #e5e5e5, #a9a9a9);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e5e5', endColorstr='#ffa9a9a9', GradientType=0);
-  width: 570px;
+  width: 540px;
   height: 365px;
   margin: -36px -35px 0 61px;
 }

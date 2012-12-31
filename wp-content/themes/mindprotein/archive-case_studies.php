@@ -6,8 +6,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<h2>Case Studies</h2>
-				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<?php query_posts('page_id=186'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
 			</div>	
 		</div>
 	</div>
@@ -46,8 +49,8 @@
 		</div>
 	</div>
 </div>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<!-- post -->
 
 <div class="caseStudiesThree">
 	<div class="container shadowContainer">
@@ -107,11 +110,8 @@
 		</div>
 	</div>
 </div>
-<?php endwhile; ?>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<?php endif; ?>
+
+<?php endwhile; endif; ?>
 
 <?php get_template_part('client-testimonies'); ?>
 </article>
