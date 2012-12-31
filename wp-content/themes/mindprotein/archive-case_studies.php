@@ -101,7 +101,8 @@
 						<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
 					</div><!-- .site-details -->
 				</div><!-- .websites -->
-		<?php endwhile; endif; ?>
+		<?php endwhile; ?> 
+		<?php endif; ?>
 			
 		</div>
 	</div>

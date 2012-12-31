@@ -6181,20 +6181,27 @@ form#searchform input[type="text"] {
   margin-bottom: 30px;
 }
 .caseStudiesThree .websites {
-  width: 534px;
   height: 90px;
   padding: 20px 0 40px 0;
   border-bottom: 1px dashed #D2D2D2;
 }
-.caseStudiesThree .websites:nth-last-child(1),
 .caseStudiesThree .websites:nth-last-child(2) {
   border-bottom: 0;
 }
-.caseStudiesThree .websites:nth-child(2n) {
+.caseStudiesThree .websites:nth-child(odd) {
+  width: 514px;
+  margin-right: 0;
+  padding-right: 20px;
+  border-right: 1px dashed #D2D2D2;
+}
+.caseStudiesThree .websites:nth-child(even) {
   width: 474px;
   margin-left: 0;
   padding-left: 20px;
-  border-left: 1px dashed #D2D2D2;
+  border-bottom: 1px dashed #D2D2D2;
+}
+.caseStudiesThree .websites:last-child {
+  border-bottom: 0;
 }
 .caseStudiesThree .websites img {
   float: left;
