@@ -6263,106 +6263,96 @@ form#searchform input[type="text"] {
   border-left: 0px;
   padding-right: 60px;
 }
-/* ...................................the blog */
-.shadowBar {
-  -webkit-box-shadow: 15px 0px 6px -6px #efefef;
-  -moz-box-shadow: 15px 0px 6px -6px #efefef;
-  box-shadow: 15px 0px 6px -6px #efefef;
-}
-.trending-post,
-.content {
-  width: 920px !important;
-}
-.blogOne {
-  padding: 49px 0 42px;
+/* ...................................the blog2 */
+.entireBlog .sticky-post {
+  padding: 50px 0 40px;
   background-color: #ebebeb;
-  -webkit-box-shadow: 0 7px 6px -2px #c7c6c6;
-  -moz-box-shadow: 0 7px 6px -2px #c7c6c6;
-  box-shadow: 0 7px 6px -2px #c7c6c6;
+  -webkit-box-shadow: 0 10px 15px -5px #999999;
+  -moz-box-shadow: 0 10px 15px -5px #999999;
+  box-shadow: 0 10px 15px -5px #999999;
 }
-.blogOne .span6 {
-  min-height: 400px;
-  margin-right: -1px;
-  background-color: #fff;
+.entireBlog .sticky-post .trendingRN {
+  height: 530px;
+  background: #fff;
 }
-.blogOne .span6 img {
-  -webkit-box-shadow: 0 10px 6px -6px #c7c6c6;
-  -moz-box-shadow: 0 10px 6px -6px #c7c6c6;
-  box-shadow: 0 10px 6px -6px #c7c6c6;
+.entireBlog .sticky-post img {
+  -webkit-box-shadow: 0px 5px 5px -1px #cccccc;
+  -moz-box-shadow: 0px 5px 5px -1px #cccccc;
+  box-shadow: 0px 5px 5px -1px #cccccc;
 }
-.blogOne h2 {
-  padding: 2px 0 0px 19px;
+.entireBlog .sticky-post h2 {
+  margin: 13px 20px 0;
   color: #006d93;
   font: 23px 'Sanchez', sans-serif;
 }
-.blogOne .author-date {
-  padding-bottom: 11px;
-  margin: 0 30px 0 19px ;
+.entireBlog .sticky-post .author-date {
+  margin: 0 20px;
+  padding-bottom: 15px;
   color: #6f6f6f;
   font: 12px 'Raleway', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: dashed 1px #d9d9d9;
 }
-.blogOne .author {
+.entireBlog .sticky-post .author {
   color: #0f8fad;
   font-weight: bold;
   text-transform: uppercase;
 }
-.blogOne .social-media {
-  padding: 10px 0 7px 19px;
+.entireBlog .sticky-post .socialMedia {
+  margin: 12px 20px 5px;
 }
-.blogOne .blog-content {
-  padding: 0 30px 30px 19px;
+.entireBlog .blog-content {
+  margin: 0 20px 30px;
   color: #6f6f6f;
   font: 14px/20px 'Raleway', sans-serif;
 }
-.blogOne .span3 {
+.entireBlog .pcd {
   width: 250px;
   padding: 10px;
   background-color: #dbdbdb;
 }
-.blogOne .span3 h3 {
+.entireBlog .pcd h3 {
   color: #676767;
   font: 15px 'Raleway', sans-serif;
   font-weight: bold;
 }
-.blogOne .span3 .graySpace {
+.entireBlog .pcd .graySpace {
   width: 100%;
   height: 80px;
   background-color: #7b7b7b;
 }
-.blogOne .span3 .discuss-list {
+.entireBlog .pcd .discuss-list {
   text-align: center;
   padding: 21px 0 26px;
   background-color: #fff;
 }
-.blogOne .span3 .discuss-list ol {
+.entireBlog .pcd .discuss-list ol {
   padding-left: 30px;
 }
-.blogOne .span3 .discuss-list ol li {
+.entireBlog .pcd .discuss-list ol li {
   margin-bottom: 20px;
   line-height: 0.3;
   border-bottom: 1px dashed #8f8f8f;
 }
-.blogOne .span3 .discuss-list ol li span {
+.entireBlog .pcd .discuss-list ol li span {
   position: relative;
   top: -15px;
 }
-.blogOne .span3 li {
+.entireBlog .pcd li {
   color: #d0d0d0;
   margin: 0 10px;
   font: bold 36px arial;
   text-align: left;
   border-bottom: dashed 1px #d9d9d9;
 }
-.blogOne .span3 li span {
+.entireBlog .pcd li span {
   color: #6f6f6f;
   font: 14px 'Raleway', sans-serif;
   padding: -50px 0 -50px;
   font-weight: bold;
 }
-.blogOne .span3 .btn {
+.entireBlog .pcd .btn {
   padding: 12px 30px;
   font: 14px 'Raleway', sans-serif;
   color: #ffffff;
@@ -6383,26 +6373,26 @@ form#searchform input[type="text"] {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: solid 1px #027288;
 }
-.blogOne .span3 .btn:hover,
-.blogOne .span3 .btn:active,
-.blogOne .span3 .btn.active,
-.blogOne .span3 .btn.disabled,
-.blogOne .span3 .btn[disabled] {
+.entireBlog .pcd .btn:hover,
+.entireBlog .pcd .btn:active,
+.entireBlog .pcd .btn.active,
+.entireBlog .pcd .btn.disabled,
+.entireBlog .pcd .btn[disabled] {
   color: #ffffff;
   background-color: #007185;
   *background-color: #005b6c;
 }
-.blogOne .span3 .btn:active,
-.blogOne .span3 .btn.active {
+.entireBlog .pcd .btn:active,
+.entireBlog .pcd .btn.active {
   background-color: #004652 \9;
 }
-.blogTwo h2 {
+.entireBlog .blogTwo h2 {
   margin-bottom: -2px;
   padding-top: 44px;
   color: #006d93;
   font: 36px 'Sanchez', sans-serif;
 }
-.blogTwo .author-date {
+.entireBlog .blogTwo .author-date {
   margin-bottom: 20px;
   padding-bottom: 12px;
   color: #6f6f6f;
@@ -6410,26 +6400,34 @@ form#searchform input[type="text"] {
   text-transform: uppercase;
   border-bottom: dashed 1px #d9d9d9;
 }
-.blogTwo span {
+.entireBlog .blogTwo span {
   color: #0f8fad;
   font-weight: bold;
   text-transform: uppercase;
 }
-.blogTwo .blog-list {
+.entireBlog .blogTwo .blog-list {
   padding-bottom: 57px;
 }
-.blogTwo .blog-content {
+.entireBlog .blogTwo .blog-content {
   color: #6f6f6f;
   font: 14px/20px 'Raleway', sans-serif;
 }
-.blogTwo .span2 {
+.entireBlog .blogTwo .span2 {
   background-color: #ebebeb;
   width: 170px;
   height: 170px;
 }
-.sideBarBlog {
+.entireBlog .sideBarBlog {
   padding-top: 20px;
   background-color: #fff;
+}
+#side-bar {
+  padding-top: 40px;
+}
+#rightShadow {
+  -webkit-box-shadow: 10px 0 10px -1px #f8f8f8;
+  -moz-box-shadow: 10px 0 10px -1px #f8f8f8;
+  box-shadow: 10px 0 10px -1px #f8f8f8;
 }
 /* ...................................the single blog post */
 .loopOne {

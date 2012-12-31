@@ -6,17 +6,17 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<div class="span9">
-			<div class="container">
-				<div class="row blogOne">
+		<div class="span9 ">
+			<div class="container ">
+				<div class="row blogOne ">
 
-					<div class="span6 sticky-post">
+					<div class="span6 sticky-post ">
 						<img src="<?php bloginfo('template_directory');?>/img/trendingRightNow.png" />
 						<h2>Business Development 101: Hiring Development</h2>
 						<div class="author-date">
 							By <span class="author">Ralph Plumb</span>, October 1, 2012
 						</div>
-						<div class="social-media">
+						<div class="socialMedia">
 							Social Media Icons
 						</div>
 						<div class="blog-content">
