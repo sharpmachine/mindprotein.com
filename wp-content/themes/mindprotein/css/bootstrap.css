@@ -5707,7 +5707,6 @@ form#searchform input[type="text"] {
   border-bottom: solid 1px #d3d3d3;
 }
 .coachingfour .btn {
-  width: 249px;
   color: #fff;
   font-size: 28px;
   font-weight: 600;
@@ -5897,14 +5896,12 @@ form#searchform input[type="text"] {
 }
 .coachingsix .coachingForm div a {
   color: #8c8c8c;
-  text-decoration: underline;
 }
 .coachingsix .coachingForm input[type="text"] {
   height: 37px;
   font-size: 20px;
 }
 .coachingsix .coachingForm .btn {
-  width: 257px;
   color: #fff;
   font: 25px 'Raleway', sans-serif;
   color: #ffffff;
@@ -5923,7 +5920,6 @@ form#searchform input[type="text"] {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: solid 1px #9c3a00;
   -moz-box-shadow: 0px 0px 5px #c7c6c6;
   -webkit-box-shadow: 0px 0px 5px #c7c6c6;
   box-shadow: 0px 0px 5px #c7c6c6;
