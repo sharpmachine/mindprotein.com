@@ -34,7 +34,7 @@ Template Name: Coaching
 					  so.addParam('wmode','opaque');
 					  so.addVariable('file','http://mindprotein.s3.amazonaws.com/Moneymagnet/BecominganOnlineEntrepreneurforThanMerrill042711MP4.mp4');
 					     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
-					  so.addVariable('autostart','true');
+					  so.addVariable('autostart','false');
 					  so.write('video');
 					</script>
 				</div>
@@ -107,7 +107,7 @@ Template Name: Coaching
 							  so.addParam('wmode','opaque');
 							  so.addVariable('file','http://davesfiles.s3.amazonaws.com/march16_mp_promo.mp4');
 							     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
-							  so.addVariable('autostart','true');
+							  so.addVariable('autostart','false');
 							  so.write('video2');
 							</script>
 						</div>

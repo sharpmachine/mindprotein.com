@@ -6127,14 +6127,15 @@ form#searchform input[type="text"] {
   font: 36px 'Sanchez', sans-serif;
 }
 .caseStudiesThree .span12 {
+  width: 1140px;
   padding-left: 30px;
 }
 .caseStudiesThree .span12 .video {
   display: inline;
   float: right;
-  width: 568px;
-  height: 342px;
-  margin: 0 30px 0 30px;
+  width: 570px;
+  height: 340px;
+  margin: 0 0 0 30px;
   text-align: center;
   background-color: #c6c6c6;
   background-image: -moz-linear-gradient(top, #dadada, #a9a9a9);
@@ -6145,6 +6146,17 @@ form#searchform input[type="text"] {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdadada', endColorstr='#ffa9a9a9', GradientType=0);
   border: solid 1px #cacaca;
+}
+.caseStudiesThree .span12 .video-wrapper {
+  width: 570px;
+  height: 340px;
+  background: url(../img/casestudiesVideoShadow.png) no-repeat center 255px;
+}
+.caseStudiesThree .span12 .video-contain {
+  width: 405px;
+  height: 225px;
+  margin: 35px auto 0 auto;
+  border: 10px solid #6B6B6B;
 }
 .caseStudiesThree .span12 .font-sub-heading {
   padding-bottom: 7px;
@@ -6181,18 +6193,24 @@ form#searchform input[type="text"] {
   margin-left: 60px;
   border-right: dashed 1px #d9d9d9;
 }
-.caseStudiesThree .span6 {
-  max-width: 400px;
-  padding: 14px 0px 22px 60px;
+.caseStudiesThree .website-roundup {
+  padding-left: 70px;
 }
-.caseStudiesThree .span6 img {
+.caseStudiesThree .websites {
+  height: 130px;
+  border-bottom: 1px dashed #000000;
+}
+.caseStudiesThree .websites:last-child {
+  border-bottom: 0;
+}
+.caseStudiesThree .websites img {
   float: left;
 }
-.caseStudiesThree .span6 .siteLinks {
+.caseStudiesThree .websites .siteLinks {
   color: #006d93;
   font: bold 24px 'Raleway', sans-serif;
 }
-.caseStudiesThree .span6 a {
+.caseStudiesThree .websites a {
   color: #818181;
   font: 18px 'Raleway', sans-serif;
 }
@@ -6609,6 +6627,9 @@ img.aligncenter {
 #video2 {
   margin-left: 23px;
   padding: 15px 0 10px 0;
+}
+.caseStudiesThree {
+  margin-bottom: 55px;
 }
 #middle-nav {
   padding-top: 60px;

@@ -55,61 +55,53 @@
 		<div class="row">
 			<div class="span12">
 				<div class="video">
-					<div id="video3">
-						<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
+					<div class="video-wrapper">
 
-						<script type='text/javascript'>
-						var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','425','237','9');
-						  so.addParam('allowfullscreen','false');
-						  so.addParam('allowscriptaccess','always');
-						  so.addParam('wmode','opaque');
-						  so.addVariable('file','<?php the_field("cs_video_url"); ?>');
-						     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
-						  so.addVariable('autostart','true');
-						  so.write('video3');
-						</script>
-					</div>
-					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesVideoShadow.png" />
+						<div class="video-contain">
+							<div id="<?php echo the_ID(); ?>">
+							
+								<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
+
+								<script type='text/javascript'>
+								var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','405','225','9');
+								  so.addParam('allowfullscreen','false');
+								  so.addParam('allowscriptaccess','always');
+								  so.addParam('wmode','opaque');
+								  so.addVariable('file','<?php the_field("cs_video_url"); ?>');
+								     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
+								  so.addVariable('autostart','false');
+									  so.write('<?php echo the_ID(); ?>');
+									</script>
+									<!-- <img src="<?php bloginfo('template_directory'); ?>/img/casestudiesVideoShadow.png" /> -->
+								</div>
+								
+						</div><!-- .video-contain -->
+					</div><!-- .video-wrapper -->
+					
 				</div>
 				<h2><?php the_title(); ?>,</h2>
 			  <h3><?php the_field('cs_business') ?></h3>
 			  <div class="font-sub-heading"><?php the_field('cs_description') ?></div>
 			  <div class="pad-text">
-				  <img class="pull-left" src="<?php bloginfo('template_directory'); ?>/img/theGymnasticsCoach.png">
+				  <img class="pull-left" src="<?php the_field('cs_company_logo'); ?>" width="180">
 				  <?php the_content(); ?>
-				  <span>
-				  <img class="fullWidthShadow" src="<?php bloginfo('template_directory'); ?>/img/casestudiesPageShadow.png">
+				  	<span>
+				  		<img class="fullWidthShadow" src="<?php bloginfo('template_directory'); ?>/img/casestudiesPageShadow.png">
 					</span>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="span6 mainWebSite">
-				<img src="<?php bloginfo('template_directory');?>/img/theGymnasticsCoach_com.png" alt="">
-				<span class="siteLinks">
-					Main Web Site
-				</span>
-				<a href="http://thegymnasticscoach.com/">thegymnasticscoach.com</a>
-			</div>
-			<div class="span6 membershipTS">
-				<img src="<?php bloginfo('template_directory');?>/img/twistarsCamp.png" alt="">
-				<span class="siteLinks">
-					Membership Training Site
-				</span>
-				<a href="http://twistarscamp.com/">twistarscamp.com</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span6 membershipWS">
-				<img src="<?php bloginfo('template_directory');?>/img/theGymansticCoachMembers.png" alt="">
-				<span class="siteLinks">
-					Membership Web Site
-				</span>
-				<a href="http://thegymnasticscoach.com/members/">thegymnasticscoach.com/members</a>
-			</div>
-			<div class="span6">
-				
-			</div>
+		<div class="row website-roundup">
+		
+		<?php if(get_field('cs_websites')): ?>
+			<?php while (has_sub_field('cs_websites')): ?>
+				<div class="span5 websites">
+					<img src="<?php the_sub_field('cs_website_screenshot') ?>" alt="<?php the_sub_field('cs_website_title') ?>" width="158" height="100">
+					<span class="siteLinks"><?php the_sub_field('cs_website_title') ?></span>
+					<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
+				</div>
+		<?php endwhile; endif; ?>
+			
 		</div>
 	</div>
 </div>
