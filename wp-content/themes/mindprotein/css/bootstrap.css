@@ -5972,13 +5972,8 @@ form#searchform input[type="text"] {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-<<<<<<< HEAD
-  border: solid 1px #9c3a00;
-=======
   -moz-box-shadow: 0px 0px 5px #c7c6c6;
->>>>>>> d910761081e9750afe3566fa44108613b57dbff7
   -webkit-box-shadow: 0px 0px 5px #c7c6c6;
-  -moz-box-shadow: 0px 0px 5px #c7c6c6;
   box-shadow: 0px 0px 5px #c7c6c6;
   text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -1px;
 }
@@ -6220,7 +6215,7 @@ form#searchform input[type="text"] {
 }
 .caseStudiesFour .span4 {
   max-width: 335px;
-  min-height: 254px;
+  height: 266px;
   margin-top: 45px;
   padding: 15px 15px 23px 18px;
   color: #ffffff;
@@ -6251,8 +6246,9 @@ form#searchform input[type="text"] {
   box-shadow: 0px 7px 10px -3px #666666;
 }
 .caseStudiesFour .span4 h3 {
-  margin: 0;
+  margin: 5px;
   font-size: 28px;
+  line-height: 1;
 }
 .caseStudiesFour .span4 .subTitle {
   margin-top: -4px;
