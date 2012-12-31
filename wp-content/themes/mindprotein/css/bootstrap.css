@@ -6117,7 +6117,7 @@ form#searchform input[type="text"] {
   float: right;
   width: 570px;
   height: 340px;
-  margin: 0 0 0 30px;
+  margin: 0 0 15px 30px;
   text-align: center;
   background-color: #c6c6c6;
   background-image: -moz-linear-gradient(top, #dadada, #a9a9a9);
@@ -6141,6 +6141,7 @@ form#searchform input[type="text"] {
   border: 10px solid #6B6B6B;
 }
 .caseStudiesThree .span12 .font-sub-heading {
+  width: 540px;
   padding-bottom: 7px;
   color: #595959;
   font: 24px 'Sanchez', sans-serif;
