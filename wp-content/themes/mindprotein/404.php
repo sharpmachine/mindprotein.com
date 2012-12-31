@@ -2,16 +2,31 @@
 
 	<section id="page">
 
-		<div id="post-0" class="post error404 not-found">
-			<h1 class="entry-title"><?php _e( 'Not Found', 'smm' ); ?></h1>
-			<div class="entry-content">
-				<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'smm' ); ?></p>
-				<?php get_search_form(); ?>
-				<h3>Try these links too!</h3>
-				<?php wp_list_pages(); ?>
-				<?php wp_list_categories(); ?>
-			</div><!-- .entry-content -->
-		</div><!-- #post-0 -->
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="span9">
+
+						<div id="post-0" class="post error404 not-found">
+							<h1 class="entry-title"><?php _e( 'Not Found', 'smm' ); ?></h1>
+							<div class="entry-content">
+								<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'smm' ); ?></p>
+								<?php get_search_form(); ?>
+								<h3>Try these links too!</h3>
+								<?php wp_list_pages(); ?>
+								<?php wp_list_categories(); ?>
+							</div><!-- .entry-content -->
+						</div><!-- #post-0 -->
+
+					</div>
+						<div class="span3">
+							
+							<?php get_sidebar(); ?>
+
+						</div>
+					</div>
+				</div>
+			</div>
 
 	</section><!-- #page -->
 	
