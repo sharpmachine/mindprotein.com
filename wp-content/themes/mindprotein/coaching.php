@@ -14,9 +14,12 @@ Template Name: Coaching
 			<div class="span6">
 				<h2>Business Coaching Program</h2>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				<div>
+				<div class="btn-group">
 					<a class="btn btn-primary btn-large">
-						Student Case Studies | >
+						Student Case Studies
+					</a>
+					<a class="btn btn-primary btn-large">
+						>
 					</a>
 				</div>
 			</div>
@@ -31,7 +34,12 @@ Template Name: Coaching
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				Join the Coaching Program: <a class="btn btn-primary btn-large">Apply Now</a> or <span>Explore the Program</span>
+				Join the Coaching Program: 
+				<div class="btn-group">
+					<a class="btn btn-primary btn-large">Apply Now</a>
+					<a class="btn btn-primary btn-large">></a> 
+				</div>
+				or <span>Explore the Program</span>
 				<img class="imgPositioning" src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
 				<img class="positionShadow" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2-2.png">
 			</div>
