@@ -8,7 +8,7 @@ Template Name: Case Studies
 
 <article id="bg-image">
 
-<div class="case-studies-one">
+<div class="caseStudiesOne">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
@@ -19,7 +19,7 @@ Template Name: Case Studies
 	</div>
 </div>
 
-<div class="case-studies-two">
+<div class="caseStudiesTwo">
 	<div class="container">
 		<div class="row">
 			<div class="span3">
@@ -54,8 +54,8 @@ Template Name: Case Studies
 	</div>
 </div>
 
-<div class="case-studies-three">
-	<div class="container">
+<div class="caseStudiesThree">
+	<div class="container shadowContainer">
 		<div class="row">
 			<div class="span12">
 				<div class="video">
@@ -71,30 +71,69 @@ Template Name: Case Studies
 				  <p>Customers are thrilled because they get instant gratification since they are able to access the videos on our membership website that we’ve set up for them. I’m thrilled because I get $500 in my bank account and nothing could be better than that.</p>
 				  <p>I'm adding two camps to our schedule this year, as were before Mind Protein, we could barely fill one camp. These two camps alone will add an extra $350,000 in sales this year.</p>
 				  <p>Thanks Mind Protein Team!</p>
-			  <span>
-			  <img class="fullWidthShadow" src="<?php bloginfo('template_directory'); ?>/img/casestudiesPageShadow.png">
-			</div>
-		</div>
-		<div class="row top-margin">
-			<div class="span6 left-margin">
-				<img class="pull-left" src="<?php bloginfo('template_directory'); ?>/img/theGymnasticsCoach_com.png">
-				<h2>Main Web Site</h2>
-				<a href="http://www.thegymnasticscoach.com/">thegymnasticscoach.com</a>
-			</div>
-			<div class="span6">
-				<img class="pull-left" src="<?php bloginfo('template_directory'); ?>/img/twistarsCamp.png">
-				<h2>Membership Training Site</h2>
-				<a href="http://www.twistarscamp.com/">twistarscamp.com</a>
+				  <span>
+				  <img class="fullWidthShadow" src="<?php bloginfo('template_directory'); ?>/img/casestudiesPageShadow.png">
+					</span>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="span6 left-margin">
-				<img class="pull-left" src="<?php bloginfo('template_directory'); ?>/img/theGymansticCoachMembers.png">
-				<h2>Membership Web site</h2>
-				<a href="http://www.thegymnasticscoach.com/members">thegymnasticscoach.com/member</a>
+			<div class="span6 mainWebSite">
+				<img src="<?php bloginfo('template_directory');?>/img/theGymnasticsCoach_com.png" alt="">
+				<span class="siteLinks">
+					Main Web Site
+				</span>
+				<a href="http://thegymnasticscoach.com/">thegymnasticscoach.com</a>
+			</div>
+			<div class="span6 membershipTS">
+				<img src="<?php bloginfo('template_directory');?>/img/twistarsCamp.png" alt="">
+				<span class="siteLinks">
+					Membership Training Site
+				</span>
+				<a href="http://twistarscamp.com/">twistarscamp.com</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span6 membershipWS">
+				<img src="<?php bloginfo('template_directory');?>/img/theGymansticCoachMembers.png" alt="">
+				<span class="siteLinks">
+					Membership Web Site
+				</span>
+				<a href="http://thegymnasticscoach.com/members/">thegymnasticscoach.com/members</a>
 			</div>
 			<div class="span6">
 				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="caseStudiesFour">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h2>Client Testimonials</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4 rightSpace">
+				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
+				<h3>Bob McIntosh</h3>
+				<div class="subTitle">Redhead Rehabs</div>
+				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
+			</div>
+			<div class="span4 rightSpace">
+				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
+				<h3>Bob McIntosh</h3>
+				<div class="subTitle">Redhead Rehabs</div>
+				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
+			</div>
+			<div class="span4">
+				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
+				<h3>Bob McIntosh</h3>
+				<div class="subTitle">Redhead Rehabs</div>
+				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
 			</div>
 		</div>
 	</div>
