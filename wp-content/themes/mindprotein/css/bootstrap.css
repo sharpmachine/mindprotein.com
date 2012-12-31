@@ -5507,7 +5507,7 @@ form#searchform input[type="text"] {
 }
 .coachingone .span6 div {
   text-align: center;
-  margin-top: 29px;
+  margin-top: 21px;
 }
 .coachingone .span6 .btn-primary {
   color: #ffffff;
@@ -5892,7 +5892,6 @@ form#searchform input[type="text"] {
 }
 .coachingsix .coachingForm div {
   color: #d2d2d2;
-  font: 11px/24px 'Raleway', sans-serif;
 }
 .coachingsix .coachingForm div a {
   color: #8c8c8c;
@@ -5954,6 +5953,13 @@ form#searchform input[type="text"] {
 }
 .coachingsix .darkenBK .borderBottom {
   border-bottom: solid 1px #d9d9d9;
+}
+.terms {
+  margin-top: 10px;
+  font-size: 11px;
+}
+.terms a {
+  text-decoration: underline;
 }
 /* ...................................the case studies */
 .case-studies-one {
@@ -6489,6 +6495,10 @@ img.aligncenter {
 }
 .navbar #middle-nav li a {
   padding: 0;
+}
+#video2 {
+  margin-left: 23px;
+  padding: 15px 0 10px 0;
 }
 #middle-nav {
   padding-top: 60px;

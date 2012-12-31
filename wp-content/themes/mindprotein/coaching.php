@@ -15,16 +15,29 @@ Template Name: Coaching
 				<h2>Business Coaching Program</h2>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				<div class="btn-group">
-					<a class="btn btn-primary btn-large">
+					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-large">
 						Student Case Studies
 					</a>
-					<a class="btn btn-primary btn-large">
+					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-large">
 						>
 					</a>
 				</div>
 			</div>
 			<div class="span6 video">
+				<div id="video">
+					<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
 
+					<script type='text/javascript'>
+					var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','530','300','9');
+					  so.addParam('allowfullscreen','false');
+					  so.addParam('allowscriptaccess','always');
+					  so.addParam('wmode','opaque');
+					  so.addVariable('file','http://mindprotein.s3.amazonaws.com/Moneymagnet/BecominganOnlineEntrepreneurforThanMerrill042711MP4.mp4');
+					     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
+					  so.addVariable('autostart','true');
+					  so.write('video');
+					</script>
+				</div>
 			</div>	
 		</div>
 	</div>
@@ -36,38 +49,39 @@ Template Name: Coaching
 			<div class="span12">
 				Join the Coaching Program: 
 				<div class="btn-group">
-					<a class="btn btn-primary btn-large">Apply Now</a>
-					<a class="btn btn-primary btn-large">></a> 
+					<a href="#apply-now" class="btn btn-primary btn-large">Apply Now</a>
+					<a href="#apply-now" class="btn btn-primary btn-large">></a> 
 				</div>
 				or <span>Explore the Program</span>
 				<img class="imgPositioning" src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
 				<img class="positionShadow" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2-2.png">
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="span3">
-				<a class="btn btn-primary btn-large right-mar">
+				<a href="#coaching-support" class="btn btn-primary btn-large right-mar">
 					<img src="<?php bloginfo('template_directory'); ?>/img/coachingAndSupport.png"><br/>
-					Coaching & Support
+					Coaching &amp; Support
 				</a>
 				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
 			<div class="span3">
-				<a class="btn btn-primary btn-large right-pad">
+				<a href="#members-only" class="btn btn-primary btn-large right-pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/membersOnlyTraining.png"><br/>
 					Members Only Training
 				</a>
 				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
 			<div class="span3">
-				<a class="btn btn-primary btn-large right-pad">
+				<a href="#live-events" class="btn btn-primary btn-large right-pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/liveEvents.png"> <br/>
 					Live Events
 				</a>
 				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
 			<div class="span3">
-				<a class="btn btn-primary btn-large">
+				<a href="#resources" class="btn btn-primary btn-large">
 					<img src="<?php bloginfo('template_directory'); ?>/img/resources.png"><br/>
 					Resources
 				</a>
@@ -76,18 +90,31 @@ Template Name: Coaching
 		</div>
 	</div>
 </div>
-
+<a name="coaching-support" id="coaching-support"></a>
 <div class="coachingthree">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
 				<div class="videoHolder">
 					<div class="video">
-						Video
+						<div id="video2">
+							<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
+
+							<script type='text/javascript'>
+							var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','425','237','9');
+							  so.addParam('allowfullscreen','false');
+							  so.addParam('allowscriptaccess','always');
+							  so.addParam('wmode','opaque');
+							  so.addVariable('file','http://davesfiles.s3.amazonaws.com/march16_mp_promo.mp4');
+							     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
+							  so.addVariable('autostart','true');
+							  so.write('video2');
+							</script>
+						</div>
 					</div>
 					<img src="<?php bloginfo('template_directory'); ?>/img/coachingVideoShadow.png" />
 				</div>
-				<h2>Coaching & Support</h2>
+				<h2>Coaching &amp; Support</h2>
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
 				<ul>
 					<li>
@@ -130,8 +157,8 @@ Template Name: Coaching
 				<div>
 					Join the Coaching Program: 
 					<div class="btn-group">
-						<a class="btn btn-primary btn-large">Apply Now</a>
-						<a class="btn btn-primary btn-large">></a> 
+						<a href="#apply-now" class="btn btn-primary btn-large">Apply Now</a>
+						<a href="#apply-now" class="btn btn-primary btn-large">></a> 
 					</div>
 					or <span>Explore the Program</span>
 					<img src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
@@ -140,7 +167,7 @@ Template Name: Coaching
 		</div>
 	</div>
 </div>
-
+<a name="members-only" id="members-only"></a>
 <div class="coachingfive">
 	<div class="container">
 		<div class="row">
@@ -167,11 +194,13 @@ Template Name: Coaching
 				</ul>
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="span12">
 				<img class="coachingShadowS5" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS5.png">
 			</div>
 		</div>
+		<a name="live-events" id="live-events" />
 		<div class="row">
 			<div class="span12">
 				<h2>MindProtein Live Events</h2>
@@ -229,8 +258,9 @@ Template Name: Coaching
 		</div>
 	</div>
 </div>
-
+<!-- <a name="apply-now" id="apply-now" /> -->
 <div class="coachingsix">
+<a name="apply-now" id="apply-now"></a>
 	<div class="container">
 		<div class="row">
 			<div class="span12">
@@ -238,20 +268,22 @@ Template Name: Coaching
 			</div>
 		</div>
 		<div class="row whiteBK">
+		
 			<div class="span6 coachingForm">
 				<form class="form-horizontal">
 				  <input type="text" class="span4" placeholder="full name">
 				  <input type="text" class="span4" placeholder="e-mail address">
 				  <input type="text" class="span4" placeholder="password">
 				  <label class="checkbox">
-				  <input type="checkbox">Sign Up For Newsletter <br/>
-				  <div class="btn-group">
-						<a class="btn btn-primary btn-large">Apply Now</a>
-						<a class="btn btn-primary btn-large">></a> 
+				  <input type="checkbox">Sign Up For Our Newsletter</label>
+				  <div class="btn-group pull-right">
+					<input class="btn btn-primary btn-large" type="submit" value="Apply Now">
+					<input class="btn btn-primary btn-large" type="submit" value=">">
 				  </div>
-				  </label>
+				  <div class="clearfix"></div>
+				 	<div class="terms">By clicking the Apply Now button, you agree to the <a href="#">Terms of Service</a></div>
 				</form>
-				<div>By clicking the Apply Now button, you agree to the <a href="">Terms of Service</a></div>
+				
 			</div>
 			<div class="span6 darkenBK pull-right">
 				<div>
