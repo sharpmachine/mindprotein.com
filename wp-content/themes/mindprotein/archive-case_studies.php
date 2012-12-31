@@ -12,7 +12,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="caseStudiesTwo">
 	<div class="container">
 		<div class="row">
@@ -95,11 +94,13 @@
 		
 		<?php if(get_field('cs_websites')): ?>
 			<?php while (has_sub_field('cs_websites')): ?>
-				<div class="span5 websites">
+				<div class="span6 websites">
 					<img src="<?php the_sub_field('cs_website_screenshot') ?>" alt="<?php the_sub_field('cs_website_title') ?>" width="158" height="100">
-					<span class="siteLinks"><?php the_sub_field('cs_website_title') ?></span>
-					<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
-				</div>
+					<div class="site-details">
+						<div class="siteLinks"><?php the_sub_field('cs_website_title') ?></div>
+						<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
+					</div><!-- .site-details -->
+				</div><!-- .websites -->
 		<?php endwhile; endif; ?>
 			
 		</div>
