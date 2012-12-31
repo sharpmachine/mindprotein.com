@@ -21,7 +21,7 @@
 				<?php endif; ?>
 				
 			</div>
-			<div class="span3">
+			<div class="span3 side-bar">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

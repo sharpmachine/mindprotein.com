@@ -5307,14 +5307,14 @@ div.singlePost > div.container > div.row > div.span3.side-bar {
   margin-left: -20px;
   padding: 0;
 }
-.side-bar {
+#sidebar {
   margin: 36px 0 0;
   color: #8f8f8f;
   font-size: 12px;
   line-height: 18px;
   background-color: #ffffff;
 }
-.side-bar hr.style-two {
+#sidebar hr.style-two {
   max-width: 240px;
   height: 1px;
   border: 0;
@@ -5323,15 +5323,15 @@ div.singlePost > div.container > div.row > div.span3.side-bar {
   background-image: -ms-linear-gradient(left, rgba(205, 205, 205, 0.25), #cdcdcd, rgba(205, 205, 205, 0.25));
   background-image: -o-linear-gradient(left, rgba(205, 205, 205, 0.25), #cdcdcd, rgba(205, 205, 205, 0.25));
 }
-.side-bar h3 {
+#sidebar h3 {
   font: 17px/18px 'Sanchez', sans-serif;
   color: #ffb400;
   padding: 10px 0 7px;
 }
-.side-bar .sign-up .navbar-form {
+#sidebar .sign-up .navbar-form {
   margin: 17px 40px 0 0;
 }
-.side-bar .sign-up .navbar-form .btn-primary {
+#sidebar .sign-up .navbar-form .btn-primary {
   background-color: #fed85e;
   background-image: -moz-linear-gradient(top, #ffe77a, #fdc233);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe77a), to(#fdc233));
@@ -6563,7 +6563,7 @@ form#searchform input[type="text"] {
   -moz-box-shadow: 12px 0px 8px -3px #f8f8f8;
   box-shadow: 12px 0px 8px -3px #f8f8f8;
 }
-.searchPage .span3 {
+#sidebar {
   margin-top: 10px;
 }
 /* ...................................the image utilities */
