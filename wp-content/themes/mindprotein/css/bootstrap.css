@@ -5304,7 +5304,7 @@ footer a {
 }
 /* ...................................the sidebar */
 div.singlePost > div.container > div.row > div.span3.side-bar {
-  margin-left: -20px;
+  margin-left: -10px;
   padding: 0;
 }
 #sidebar {
