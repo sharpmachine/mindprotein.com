@@ -14,9 +14,12 @@ Template Name: Coaching
 			<div class="span6">
 				<h2>Business Coaching Program</h2>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				<div>
+				<div class="btn-group">
 					<a class="btn btn-primary btn-large">
-						Student Case Studies | >
+						Student Case Studies
+					</a>
+					<a class="btn btn-primary btn-large">
+						>
 					</a>
 				</div>
 			</div>
@@ -31,7 +34,12 @@ Template Name: Coaching
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				Join the Coaching Program: <a class="btn btn-primary btn-large">Apply Now</a> or <span>Explore the Program</span>
+				Join the Coaching Program: 
+				<div class="btn-group">
+					<a class="btn btn-primary btn-large">Apply Now</a>
+					<a class="btn btn-primary btn-large">></a> 
+				</div>
+				or <span>Explore the Program</span>
 				<img class="imgPositioning" src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
 				<img class="positionShadow" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2-2.png">
 			</div>
@@ -120,7 +128,12 @@ Template Name: Coaching
 		<div class="row">
 			<div class="span12">
 				<div>
-					Join the Coaching Program: <a class="btn btn-primary btn-large">Apply Now</a> or <span>Explore the Program</span>
+					Join the Coaching Program: 
+					<div class="btn-group">
+						<a class="btn btn-primary btn-large">Apply Now</a>
+						<a class="btn btn-primary btn-large">></a> 
+					</div>
+					or <span>Explore the Program</span>
 					<img src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
 				</div>
 			</div>
@@ -200,12 +213,14 @@ Template Name: Coaching
 					Mastermind sessions with MindProtein coaches and other Prodigy entrepreneurs. These exclusive sessions will allow for you to share your successes as well as challenges while gaining valueable feedback and knowledge throughout the experience.
 				</p>
 				<div class="center-buttons">
-					<a class="btn btn-primary btn-large">
-							Register For Prodigy | >
-					</a>
-					<a class="btn btn-primary btn-large">
-						Button Text Here | >
-					</a>
+					<div class="btn-group">
+						<a class="btn btn-primary btn-large">Register For Prodigy</a>
+						<a class="btn btn-primary btn-large">></a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-primary btn-large">Button Text Here</a>
+						<a class="btn btn-primary btn-large">></a>
+					</div>
 				</div>
 			</div>
 			<div class="span3">
@@ -230,7 +245,10 @@ Template Name: Coaching
 				  <input type="text" class="span4" placeholder="password">
 				  <label class="checkbox">
 				  <input type="checkbox">Sign Up For Newsletter <br/>
-				  <button type="submit" class="btn btn-primary btn-large pull-right">Apply Now | ></button>
+				  <div class="btn-group">
+						<a class="btn btn-primary btn-large">Apply Now</a>
+						<a class="btn btn-primary btn-large">></a> 
+				  </div>
 				  </label>
 				</form>
 				<div>By clicking the Apply Now button, you agree to the <a href="">Terms of Service</a></div>
