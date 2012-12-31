@@ -68,7 +68,7 @@ get_header(); ?>
 
 			</div>
 		</div>
-		<div class="span3 side-bar sideBarBlog">
+		<div class="span3 sideBarBlog">
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
