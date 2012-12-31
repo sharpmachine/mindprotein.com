@@ -6563,6 +6563,9 @@ form#searchform input[type="text"] {
   -moz-box-shadow: 12px 0px 8px -3px #f8f8f8;
   box-shadow: 12px 0px 8px -3px #f8f8f8;
 }
+.searchPage .span3 {
+  margin-top: 10px;
+}
 /* ...................................the image utilities */
 img.size-auto,
 img.size-full,
