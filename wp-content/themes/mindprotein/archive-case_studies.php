@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Case Studies
-*/
-?>
-
 <?php get_header(); ?>
 
 <article id="bg-image">
@@ -53,24 +47,36 @@ Template Name: Case Studies
 		</div>
 	</div>
 </div>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- post -->
 
 <div class="caseStudiesThree">
 	<div class="container shadowContainer">
 		<div class="row">
 			<div class="span12">
 				<div class="video">
+					<div id="video3">
+						<script type="text/javascript" src="http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/swfobject.js"></script>
+
+						<script type='text/javascript'>
+						var so = new SWFObject('http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/player.swf','mpl','425','237','9');
+						  so.addParam('allowfullscreen','false');
+						  so.addParam('allowscriptaccess','always');
+						  so.addParam('wmode','opaque');
+						  so.addVariable('file','<?php the_field("cs_video_url"); ?>');
+						     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
+						  so.addVariable('autostart','true');
+						  so.write('video3');
+						</script>
+					</div>
 					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesVideoShadow.png" />
 				</div>
-				<h2>Kristin Moore,</h2>
-			  <h3>The Gymnastics Coach</h3>
-			  <div class="font-sub-heading">Gymnastics DVD Training, Seminars and Camps for Coaches and Students.</div>
+				<h2><?php the_title(); ?>,</h2>
+			  <h3><?php the_field('cs_business') ?></h3>
+			  <div class="font-sub-heading"><?php the_field('cs_description') ?></div>
 			  <div class="pad-text">
 				  <img class="pull-left" src="<?php bloginfo('template_directory'); ?>/img/theGymnasticsCoach.png">
-				  <p>I’m Kristin Moore – I’m a single mother of 4 and I’ve taken back control of my life and I love what I do!! Using Ralph’s systems and techniques, I’ve gone from trying to piece together income as a real estate investor, to truly loving what I do. I’ve sold over $17,000 in gymnastics videos online in just the past couple of months, I ran an email capaign that generated over $150,000 in sales, and I now am taking consulting opportunities doing what I love. It all started by working with Ralph and his team.</p>
-				  <p>One of the things that I absolutely love about working with Ralph and his team is: after I developed our information product, our videos online, we created this membership program and now rather than me having to fulfill an order, make a DVD, and mail it out to somebody, customers are just purchasing and accessing it online. Ralph’s team showed me some pricing strategies and I have now taken what we used to sell out of our back pocket as a $30 video, and I’ve now turned it into a larger package and I would have never thought that we could do this, but we charge nearly $500 for an entire package of these $30 videos.And my favorite thing is waking up in the morning and opening up my email and seeing that $500 just dropped into my bank account and I literally don’t have to do anything.</p>
-				  <p>Customers are thrilled because they get instant gratification since they are able to access the videos on our membership website that we’ve set up for them. I’m thrilled because I get $500 in my bank account and nothing could be better than that.</p>
-				  <p>I'm adding two camps to our schedule this year, as were before Mind Protein, we could barely fill one camp. These two camps alone will add an extra $350,000 in sales this year.</p>
-				  <p>Thanks Mind Protein Team!</p>
+				  <?php the_content(); ?>
 				  <span>
 				  <img class="fullWidthShadow" src="<?php bloginfo('template_directory'); ?>/img/casestudiesPageShadow.png">
 					</span>
@@ -107,6 +113,12 @@ Template Name: Case Studies
 		</div>
 	</div>
 </div>
+<?php endwhile; ?>
+<!-- post navigation -->
+<?php else: ?>
+<!-- no posts found -->
+<?php endif; ?>
+
 <?php get_template_part('client-testimonies'); ?>
 </article>
 

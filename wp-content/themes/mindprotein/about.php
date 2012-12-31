@@ -46,38 +46,7 @@ Template Name: About
 		</div>
 	</div>
 </div>
-
-<div class="aboutthree">
-	<div class="container">
-		<div class="row">
-			<div class="span12">
-				<h2>Client Testimonials</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span4 rightSpace">
-				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
-				<h3>Bob McIntosh</h3>
-				<div class="subTitle">Redhead Rehabs</div>
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
-			</div>
-			<div class="span4 rightSpace">
-				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
-				<h3>Bob McIntosh</h3>
-				<div class="subTitle">Redhead Rehabs</div>
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
-			</div>
-			<div class="span4">
-				<img src="<?php bloginfo('template_directory')?>/img/clientTestimonials.png" alt="">
-				<h3>Bob McIntosh</h3>
-				<div class="subTitle">Redhead Rehabs</div>
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</blockquote>
-			</div>
-		</div>
-	</div>
-</div>
-
+<?php get_template_part('client-testimonies'); ?>
 </article>
 
 <?php get_footer(); ?>
