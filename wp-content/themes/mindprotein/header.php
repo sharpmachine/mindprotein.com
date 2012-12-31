@@ -58,13 +58,13 @@
 		<header>
 
 			<div class="navbar navbar-inverse">
-		    <div class="navbar-inner">
+		    <div id="menuBKtop" class="navbar-inner">
 		      <div class="container">
 		      	<div class="row">
 		      		<div class="span12" id="top-nav">
 				      	<ul class="nav pull-right">
 									<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
-									<li><a href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
+									<li><a class="contactMenu" href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -72,8 +72,8 @@
 		    </div>
 		  </div>
 		  
-		 	<div class="navbar navbar-inverse">
-		    <div class="navbar-inner">
+		 	<div  class="navbar navbar-inverse">
+		    <div id="menuBKmiddle" class="navbar-inner">
 		      <div class="container">
 		      	<div class="row">
 		      		<div class="span5" id="img-position">
