@@ -7,6 +7,7 @@ Project Name: Mind Protein
 	font-family: 'Raleway', sans-serif;
 }
 
+
 /* ...................................the header*/
 
 // Header
@@ -460,7 +461,7 @@ form#searchform {
 
 			.darkbox {
 				#gradient > .vertical(#e5e5e5, #a9a9a9);
-				width: 570px;
+				width: 540px;
 				height: 365px;
 				margin: -36px -35px 0 61px;
 			}
@@ -1034,7 +1035,7 @@ form#searchform {
 			float: right;
 			width: 570px;
 			height: 340px;
-			margin: 0 0 0 30px;
+			margin: 0 0 15px 30px;
 			text-align: center;
 
 			#gradient .vertical(#dadada, #a9a9a9);
@@ -1055,6 +1056,7 @@ form#searchform {
 		}
 
 		.font-sub-heading {
+			width: 540px;
 			padding-bottom: 7px;
 			color: @grayDarkerFont;
 			font: 24px @sansFontFamilyTwo;
@@ -1100,13 +1102,33 @@ form#searchform {
 
 	.website-roundup {
 		padding-left: 70px;
+		margin-bottom: 30px;
 	}
 
 	.websites {
-		// max-width: 400px;
-		// padding: 14px 0px 22px 60px;
-		height: 130px;
-		border-bottom: 1px dashed @black;
+		// width: 534px;
+		height: 90px;
+		padding: 20px 0 40px 0;
+		border-bottom: 1px dashed #D2D2D2;
+
+		&:nth-last-child(2) {
+			border-bottom: 0;
+		}
+
+		&:nth-child(odd) {
+			// width: 474px;
+			width: 514px;
+			margin-right: 0;
+			padding-right: 20px;
+			border-right: 1px dashed #D2D2D2;
+		}
+
+		&:nth-child(even) {
+			width: 474px;
+			margin-left: 0;
+			padding-left: 20px;
+			border-bottom: 1px dashed #D2D2D2;
+		}
 
 		&:last-child {
 			border-bottom: 0;
@@ -1114,6 +1136,10 @@ form#searchform {
 
 		img {
 			float: left;
+		}
+
+		.site-details {
+			padding: 30px 0 0 170px;
 		}
 
 		.siteLinks {

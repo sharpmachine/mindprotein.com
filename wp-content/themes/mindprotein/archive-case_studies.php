@@ -6,13 +6,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<h2>Case Studies</h2>
-				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<?php query_posts('page_id=186'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
 			</div>	
 		</div>
 	</div>
 </div>
-
 <div class="caseStudiesTwo">
 	<div class="container">
 		<div class="row">
@@ -47,8 +49,8 @@
 		</div>
 	</div>
 </div>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<!-- post -->
 
 <div class="caseStudiesThree">
 	<div class="container shadowContainer">
@@ -95,21 +97,21 @@
 		
 		<?php if(get_field('cs_websites')): ?>
 			<?php while (has_sub_field('cs_websites')): ?>
-				<div class="span5 websites">
+				<div class="span6 websites">
 					<img src="<?php the_sub_field('cs_website_screenshot') ?>" alt="<?php the_sub_field('cs_website_title') ?>" width="158" height="100">
-					<span class="siteLinks"><?php the_sub_field('cs_website_title') ?></span>
-					<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
-				</div>
-		<?php endwhile; endif; ?>
+					<div class="site-details">
+						<div class="siteLinks"><?php the_sub_field('cs_website_title') ?></div>
+						<a href="http://<?php the_sub_field('cs_website_url') ?>"><?php the_sub_field('cs_website_url') ?></a>
+					</div><!-- .site-details -->
+				</div><!-- .websites -->
+		<?php endwhile; ?> 
+		<?php endif; ?>
 			
 		</div>
 	</div>
 </div>
-<?php endwhile; ?>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<?php endif; ?>
+
+<?php endwhile; endif; ?>
 
 <?php get_template_part('client-testimonies'); ?>
 </article>
