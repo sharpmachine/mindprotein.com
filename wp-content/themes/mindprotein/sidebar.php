@@ -2,14 +2,10 @@
 
 	<ul class="unstyled">
 
-		
-
 			<li id="search" class="widget-container widget_search">
 				<?php get_template_part('searchform'); ?>
 			</li>
 
-		
-	
 	<hr class="style-two">
 	
 	<ul class="list6 clearfix">

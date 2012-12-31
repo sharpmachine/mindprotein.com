@@ -23,9 +23,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- End Facebook Like JavaScript SDK -->
 
-	<div class="container">
-		<div class="row loopOne">
-			<div class="span9">
+		<div class="loopOne">
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -77,6 +75,4 @@
 
 					<?php endwhile; // end of the loop. ?>
 
-			</div>
 		</div>
-	</div>
