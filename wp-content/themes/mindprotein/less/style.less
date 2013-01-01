@@ -353,20 +353,15 @@ footer {
 
 /* ...................................the sidebar */
 
-div.singlePost > div.container > div.row > div.span3.side-bar {
-	margin-left: -10px;
-	padding: 0;
-}
-
 #sidebar {
-	margin: 36px 0 0;
+	margin: 15px 0 0;
 	color: @gray;
 	font-size: 12px;
 	line-height: 18px;
 	background-color: @white;
 
 	hr.style-two {
-		max-width: 240px;
+		max-width: 100%;
 		height: 1px;
     border: 0;
     background-image: -webkit-linear-gradient(left, rgba(205,205,205,0.25), rgba(205,205,205,1), rgba(205,205,205,0.25)); 
@@ -382,17 +377,24 @@ div.singlePost > div.container > div.row > div.span3.side-bar {
 	
 	}
 
-	.sign-up {
+	.signUp {
+
+		input[type="text"] {
+			width: 256px;
+			height: 23px;
+			margin-top: 10px;
+			#gradient > .vertical(#ffffff, #f6f6f6);
+		}
 
 		.navbar-form {
-			margin: 17px 40px 0 0;
+			margin: 10px 0 0;
 
 			.btn-primary {
-				#gradient > .vertical(#ffe77a, #fdc233);
-	  		//.buttonBackground(#fdc233, #ffe77a);
+	  		.buttonBackground(#ffe77a, #fdc233);
 	  		color: #b58000;
 	  		border: solid 1px #ffb300;
 	  		.box-shadow(0px 3px  5px #c7c6c6);
+	  		margin-top: 10px;
 			}
 		}
 	}
@@ -437,9 +439,14 @@ form#searchform {
 	}
 
 	input[type="text"] {
-		width: 175px;
+		width: 207px;
 		height: 23px;
+		#gradient > .vertical(#ffffff, #f6f6f6);
 	}
+}
+
+.sideBarTopMargin {
+	margin-top: 35px;
 }
 
 
@@ -978,6 +985,54 @@ form#searchform {
 				border-bottom: solid 1px @grayLighter;
 		}
 	}
+
+	//----------------------------------------------
+
+	.applyNowForm {
+		max-width: 450px;
+		padding: 60px 60px 0;
+		font: 14px @sansFontFamily;
+		background-color: #fff;
+
+		input[type="text"] {
+			height: 38px;
+			margin-bottom: 28px;
+			font-size: 20px;
+			#gradient > .vertical(#ffffff, #f6f6f6);
+		}
+
+		.btn {
+			// width: 257px;
+			color: #fff;
+			font: 25px @sansFontFamily;
+  		.buttonBackground(#da5c00, #c24100);
+  		.box-shadow(0px 0px 5px #c7c6c6);
+  		// border: solid 1px #9c3a00;
+  		-moz-box-shadow: 0px 0px 5px #c7c6c6;
+		  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+			box-shadow: 0px 0px 5px #c7c6c6;
+			text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -1px;
+		}
+	}
+
+	.applyNowList {
+		max-width: 450px;
+		padding: 42px 37px 37px 48px;
+		background-color: #eee;
+		border: solid 7px #fff;
+
+		li {
+			padding-top: 10px;
+			padding-bottom: 20px;
+			font: 26px @sansFontFamilyTwo;
+			font-weight: 100;
+			list-style-image: url(../img/coachingCheckmarkLG.png);
+		}
+	}
+
+	.borderBottom {
+				border-bottom: solid 1px @grayLighter;
+	}
 }
 
 .terms {
@@ -1185,17 +1240,17 @@ form#searchform {
 .caseStudiesFour {
 	margin: 52px 0 73px;
 	padding-top: 29px;
-	border-top: solid 1px #d3d3d3;
-	font-family: 'Sanchez', sans-serif;
+	font-family: @sansFontFamilyTwo;
 	background-color: #fff;
+	border-top: solid 1px #d3d3d3;
 
 	.span12 {
 	
 		h2 {
+			margin: 12px 0 3px;
 			color: @blueDark;
 			font-size: 48px;
 			font-size: 100;
-			margin: 12px 0 3px;
 		}
 
 		p {
@@ -1204,14 +1259,14 @@ form#searchform {
 		}
 	}
 
-	.span4 {
+	.testimonial {
 		max-width: 335px;
-		height: 266px;
+		height: 256px;
 		margin-top: 45px;
-		padding: 15px 15px 23px 18px;
+		padding: 16px 15px 23px 18px;
 		color: @white;
 		text-shadow: 1px -1px #777;
-		#gradient > .vertical(#a4a4a4, #888888);
+		background: url(../img/testimonialBK.png);
 		border: solid 1px @grayLighter;
 		.box-shadow(0px 0px 6px 4px #d8d8d8);
 
@@ -1225,24 +1280,23 @@ form#searchform {
 		}
 
 		h3 {
-			margin: 5px;
+			margin: 6px 0 1px;
 			font-size: 28px;
 			line-height: 1;
 		}
 
 		.subTitle {
-			margin-top: -4px;
-			margin-bottom: 15px;
+			margin: 0;
 			font-size: 18px;
 			font-weight: 100;
 		}
 
 		blockquote {
+			margin: 15px 36px 0;
 			font-size: 16px;
 			font-weight: 100;
 			line-height: 24px;
-			border-left: 0px;
-			padding-right: 60px;
+			border: 0px;
 		}
 	}
 }
@@ -1250,6 +1304,10 @@ form#searchform {
 /* ...................................the blog2 */
 
 .entireBlog {
+
+	[class*="span"] {
+		margin-left: 20px;
+	}
 
 	.sticky-post {
 		padding: 50px 0 40px;
@@ -1641,7 +1699,7 @@ form#searchform {
 	margin-top: 12px;
 
 	.rightShadow {
-		margin-right: 10px;
+		margin-right: 0px;
 		padding-right: 30px;
 		.box-shadow(12px 0px 8px -3px #f8f8f8);
 	}
@@ -1651,10 +1709,6 @@ form#searchform {
 	}
 }
 
-
-#sidebar {
-		margin-top: 10px;
-	}
 
 /* ...................................the image utilities */
 img.size-auto,

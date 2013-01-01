@@ -14,7 +14,7 @@
 						get_template_part( 'loop', 'single' );
 						?>
 					</div>
-					<div class="span3 side-bar">
+					<div class="span3">
 						<?php get_sidebar(); ?>
 					</div>
 				</div>

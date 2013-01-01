@@ -260,6 +260,7 @@ Template Name: Coaching
 	</div>
 </div>
 <!-- <a name="apply-now" id="apply-now" /> -->
+
 <div class="coachingsix">
 <a name="apply-now" id="apply-now"></a>
 	<div class="container">
@@ -298,9 +299,42 @@ Template Name: Coaching
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 
 </article>
 
 <?php get_footer(); ?>
+
+		
+
+
+
+
+		<!-- <div class="row">
+			<div class="span6 applyNowForm">
+				<form class="form-horizontal">
+				  <input type="text" class="span4" placeholder="full name">
+				  <input type="text" class="span4" placeholder="e-mail address">
+				  <input type="text" class="span4" placeholder="password">
+				  <label class="checkbox">
+				  	<input type="checkbox">Sign Up For Our Newsletter
+					</label>
+				  <div class="btn-group pull-right">
+					<input class="btn btn-primary btn-large" type="submit" value="Apply Now">
+					<input class="btn btn-primary btn-large" type="submit" value=">">
+				  </div>
+				  <div class="clearfix"></div>
+				 	<div class="terms">By clicking the Apply Now button, you agree to the <a href="#">Terms of Service</a></div>
+				</form>
+			</div>
+			<div class="span6 applyNowList">
+				<ul>
+						<li class="borderBottom">Trusted by thousands of Internet marketers worldwide</li>
+						<li class="borderBottom">Great customer support</li>
+						<li class="borderBottom">Easy setup</li>
+						<li class="borderBottom">Weekly training resources</li>
+						<li>Cancel anytime</li>
+					</ul>
+			</div>
+		</div>
+	</div> -->

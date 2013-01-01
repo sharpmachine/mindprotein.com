@@ -171,7 +171,7 @@
 						</div>
 					</div>
 
-					<div class="span3 side-bar">
+					<div class="span3 sideBarTopMargin">
 						<?php get_sidebar(); ?>
 					</div>
 
