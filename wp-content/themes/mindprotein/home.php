@@ -69,6 +69,7 @@
 					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">></a>
 				</div>
 			</div>
+			
 			<div class="span7">
 				<div class="video-container">
 					<div id="video-player">
@@ -80,11 +81,12 @@
 							  so.addParam('allowfullscreen','false');
 							  so.addParam('allowscriptaccess','always');
 							  so.addParam('wmode','opaque');
-							  so.addVariable('file','http://davesfiles.s3.amazonaws.com/march16_mp_promo.mp4');
+							  so.addVariable('file','<?php the_field("video_url", "option"); ?>');
 							     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
 							  so.addVariable('autostart','false');
 							  so.write('video');
 							</script>
+
 						</div>
 					</div>
 					<div class="video-thumbs">
@@ -118,28 +120,31 @@
 			<div class="span12">
 				<div class="row">
 					<div class="span9">
-						<div class="row">
-						<?php $featured_query = new WP_Query('showposts=1');
-						while ($featured_query->have_posts()) : $featured_query->the_post();
-						$do_not_duplicate[] = $post->ID 
-						 ?>
+							
+							<?php $featured_query = new WP_Query('showposts=1');
+								while ($featured_query->have_posts()) : $featured_query->the_post();
+								$do_not_duplicate[] = $post->ID 
+								 ?>
+						<div class="post-block">
+							<div class="row">
 								<div class="span9 space9">
-								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<div>By <span><?php the_author_posts_link(); ?></span>, <?php the_date(); ?></div>
+									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									<div>By <span><?php the_author_posts_link(); ?></span>, <?php the_date(); ?></div>
+								</div>
 							</div>
-						</div>
-						<div class="row lastest-post">
-							<div class="span3 post-thumb">
-								<?php the_post_thumbnail(array(270, 230)); ?>
+							<div class="row lastest-post">
+								<div class="span3 post-thumb">
+									<?php the_post_thumbnail(array(270, 230)); ?>
+								</div>
+								<div class="span4">
+									<?php the_excerpt(); ?>
+								</div>
+								<div class="span2 socialMedia">
+									<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+								</div>
 							</div>
-							<div class="span4">
-								<?php the_excerpt(); ?>
-							</div>
-							<div class="span2">
-								<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
-							</div>
-							<?php endwhile; ?>
-						</div>
+						</div><!-- .post-block -->
+						<?php endwhile; ?>
 						
 						<div class="row small-articles">
 							<?php query_posts('showposts=5'); ?>
@@ -160,32 +165,10 @@
 											<?php echo get_likes($permalink); ?>
 										</span>
 									</div>
-									
-									
-									
 								</div>
 							</div>
 							<?php endwhile; ?>
 						</div>
-						
-						<!-- <div class="row spacing-articles">
-							<div class="span1">	
-								<img src="<?php bloginfo('template_directory'); ?>/img/finger-typing-sm2.png">
-							</div>
-							<div class="span3">
-								<h3>Why Startups Shouldn’t Ignore Social Media</h3>
-								<div>Like / Tweet</div>
-							</div>
-							<div class="span1">
-							</div>
-							<div class="span1">
-								<img src="<?php bloginfo('template_directory'); ?>/img/finger-typing-sm2.png">
-							</div>
-							<div class="span3">
-								<h3>Why Startups Shouldn’t Ignore Social Media</h3>
-								<div>Like / Tweet</div>
-							</div>
-						</div> -->
 					</div>
 
 					<div class="span3 side-bar">
