@@ -38,11 +38,13 @@
 											<div class="socialMedia">
 												<div class="shareThis">Share This Story</div>
 												<div class="facebook">
-													<div class="fb-like" data-href="https://www.facebook.com/MindProtein" data-send="false" data-width="100%" data-show-faces="false"></div>
+													<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-width="100%" data-show-faces="false"></div>
 												</div>
-												<div class="socialSharing">Social Sharing</div>
+												
+													<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+												
 											</div>
-											<img class="socialImage" src="<?php bloginfo('template_directory');?>/img/blogPicture.png" />
+											<?php the_post_thumbnail(array(270, 230)); ?>
 										</div>
 
 										<div class="entry-content">

@@ -5346,6 +5346,30 @@ div.singlePost > div.container > div.row > div.span3.side-bar {
   -moz-box-shadow: 0px 3px 5px #c7c6c6;
   box-shadow: 0px 3px 5px #c7c6c6;
 }
+.tiny-article {
+  width: 270px;
+  height: 75px;
+  padding-top: 30px;
+  clear: both;
+  border-bottom: 1px dashed #999;
+}
+.tiny-article .tiny-post-thumb {
+  float: left;
+  width: 68px;
+  margin-left: 5px;
+}
+.tiny-article .tiny-article-title {
+  float: left;
+  width: 195px;
+}
+.tiny-article .tiny-article-title h3 {
+  margin: 0;
+  padding: 0 !important;
+  line-height: 0;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
 form#searchform input[type="submit"] {
   background: url(../img/search.png);
   width: 46px;
@@ -6516,6 +6540,15 @@ form#searchform input[type="text"] {
 .loopOne .socialMedia {
   margin-top: 20px;
   background-color: #ebebeb;
+}
+.loopOne .socialMedia .sociable ul {
+  margin: 0 0 0 30px;
+  padding-bottom: 10px;
+}
+.loopOne .socialMedia .sociable ul li {
+  width: 100px;
+  display: block;
+  float: left;
 }
 .loopOne .socialMedia .shareThis {
   padding: 10px 11px;

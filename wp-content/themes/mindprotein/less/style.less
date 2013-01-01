@@ -398,6 +398,34 @@ div.singlePost > div.container > div.row > div.span3.side-bar {
 	}
 }
 
+.tiny-article {
+	width: 270px;
+	height: 75px;
+	padding-top: 30px;
+	clear: both;
+	border-bottom: 1px dashed #999;
+
+	.tiny-post-thumb {
+		float: left;
+		width: 68px;
+		margin-left: 5px;
+	}
+
+	.tiny-article-title {
+		float: left;
+		width: 195px;
+
+		h3 {
+			margin: 0;
+			padding: 0 !important;
+			line-height: 0;
+			color: @black;
+			font-size: 12px;
+			font-weight: bold;
+		}
+	}
+}
+
 form#searchform {
 
 	input[type="submit"] {
@@ -1449,6 +1477,7 @@ form#searchform {
 		}
 	}
 }
+
 #side-bar {
 	padding-top: 40px;
 }
@@ -1471,6 +1500,19 @@ form#searchform {
 	.socialMedia {
 		margin-top: 20px;
 		background-color: #ebebeb;
+
+		.sociable ul {
+			margin: 0 0 0 30px;
+			padding-bottom: 10px;
+
+			li {
+				width: 100px;
+				display: block;
+				float: left;
+			}
+		}
+
+
 
 		.shareThis {
 			padding: 10px 11px;
