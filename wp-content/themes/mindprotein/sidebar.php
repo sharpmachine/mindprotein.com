@@ -40,19 +40,26 @@
 	</ul>
 
 	<hr class="style-two">
-	<?php wp_reset_query(); ?>
-	<?php if (is_front_page()): ?>
-		<?php dynamic_sidebar( 'primary-widget-area' ); ?> 
-	<?php endif; ?>
+
 	
-	<?php wp_reset_query(); ?>
-	<?php if ( ! is_front_page() ): ?>
-		<?php dynamic_sidebar( 'secondary-widget-area' ); ?> 
-	<?php endif; ?>
+		<?php wp_reset_query(); ?>
+		<?php if (is_front_page()): ?>
+			<?php dynamic_sidebar( 'primary-widget-area' ); ?> 
+		<?php endif; ?>
+
 		
-<?php if(is_single()): ?>
-	<?php dynamic_sidebar( 'blog-post-widget-area' ); ?> 
-<?php endif; ?>
+		<?php wp_reset_query(); ?>
+		<?php if ( ! is_front_page() ): ?>
+		<div class="articleCategories widget_execphp">
+			<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
+		</div> 
+		<?php endif; ?>
+		
+
+		<?php if(is_single()): ?>
+			<?php dynamic_sidebar( 'blog-post-widget-area' ); ?> 
+		<?php endif; ?>
+
 </ul>
 </div><!-- #primary .widget-area -->
 
