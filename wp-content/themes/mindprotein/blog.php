@@ -76,15 +76,14 @@ get_header(); ?>
 						</div><!-- .post-block -->
 						<?php endwhile; ?>
 					</div>
-<<<<<<< HEAD
+
 			</div>
 			<div class="span3 sideBarTopMargin">
-				
-=======
+
 				</div>
 			
 			<div class="span3" id="side-bar">
->>>>>>> 2a9b678b96383f27933730347f6c057d08729c79
+
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

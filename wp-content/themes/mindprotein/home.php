@@ -89,7 +89,7 @@
 
 						</div>
 					</div>
-					<div class="video-thumbs">
+					<div class="video-thumbs hidden-phone">
 						<a href="<?php bloginfo('url'); ?>/case-studies">
 							<img src="<?php bloginfo('template_directory'); ?>/img/video-thumb1.jpg" alt="Thumbnail" width="135" height="75">
 						</a>
@@ -103,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-phone">
 			<div class="span1">
 				<img src="<?php bloginfo('template_directory'); ?>/img/twitter-icon.png">
 			</div>
@@ -139,7 +139,7 @@
 								<div class="span4">
 									<?php the_excerpt(); ?>
 								</div>
-								<div class="span2 socialMedia">
+								<div class="span2 socialMedia hidden-phone">
 									<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
 								</div>
 							</div>
@@ -153,12 +153,12 @@
 							update_post_caches($post);
 							 ?>
 							 <div class="small-article">
-								<div class="small-post-thumb">	
+								<div class="small-post-thumb hidden-phone">	
 									<?php the_post_thumbnail(array(100, 85)); ?>
 								</div>
 								<div class="small-article-title">
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-									<div class="sm-counter">
+									<div class="sm-counter hidden-phone">
 									 <?php $permalink = get_post_permalink(); ?>
 										<span class="likes"><?php echo get_tweets($permalink); ?></span>
 										<span class="retweets">

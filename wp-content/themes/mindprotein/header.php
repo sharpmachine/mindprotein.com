@@ -61,7 +61,7 @@
 		    <div id="menuBKtop" class="navbar-inner">
 		      <div class="container">
 		      	<div class="row">
-		      		<div class="span12" id="top-nav">
+		      		<div class="span12 hidden-phone" id="top-nav">
 				      	<ul class="nav pull-right">
 									<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
 									<li><a class="contactMenu" href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>

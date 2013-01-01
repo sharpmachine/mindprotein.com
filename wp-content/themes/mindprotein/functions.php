@@ -235,9 +235,9 @@ endif;
 function smm_widgets_init() {
 	// Area 1, located at the top of the sidebar.
 	register_sidebar( array(
-		'name' => __( 'Primary Widget Area', 'smm' ),
+		'name' => __( 'Home Widget Area', 'smm' ),
 		'id' => 'primary-widget-area',
-		'description' => __( 'The primary widget area', 'smm' ),
+		'description' => __( 'Widgets placed here will only show on the homepage', 'smm' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -246,9 +246,9 @@ function smm_widgets_init() {
 
 	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'smm' ),
+		'name' => __( 'Blog Widget Area', 'smm' ),
 		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'smm' ),
+		'description' => __( 'Widgets placed here will only show in the blog', 'smm' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -257,42 +257,9 @@ function smm_widgets_init() {
 
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'smm' ),
-		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 4, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'smm' ),
-		'id' => 'second-footer-widget-area',
-		'description' => __( 'The second footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 5, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'smm' ),
-		'id' => 'third-footer-widget-area',
-		'description' => __( 'The third footer widget area', 'smm' ),
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	// Area 6, located in the footer. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'smm' ),
-		'id' => 'fourth-footer-widget-area',
-		'description' => __( 'The fourth footer widget area', 'smm' ),
+		'name' => __( 'Single Blog Post Widget Area', 'smm' ),
+		'id' => 'blog-post-widget-area',
+		'description' => __( 'Widgets placed here will only show on single blog posts', 'smm' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
