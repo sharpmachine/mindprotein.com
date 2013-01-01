@@ -72,7 +72,7 @@ get_header(); ?>
 
 					</div>
 			</div>
-			<div class="span3" id="side-bar">
+			<div class="span3 sideBarTopMargin">
 				
 				<?php get_sidebar(); ?>
 

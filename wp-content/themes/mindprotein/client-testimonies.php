@@ -9,7 +9,7 @@
 		<div class="row">
 			<?php query_posts('post_type=client_testimonies&showposts=3'); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<div class="span4">
+				<div class="span4 testimonial">
 					<img src="<?php the_field('client_headshot') ?>" alt="">
 					<h3><?php the_title(); ?></h3>
 					<div class="subTitle"><?php the_field('company'); ?></div>
