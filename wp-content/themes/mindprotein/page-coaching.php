@@ -27,7 +27,7 @@
 					  so.addParam('allowfullscreen','false');
 					  so.addParam('allowscriptaccess','always');
 					  so.addParam('wmode','opaque');
-					  so.addVariable('file','http://mindprotein.s3.amazonaws.com/Moneymagnet/BecominganOnlineEntrepreneurforThanMerrill042711MP4.mp4');
+					  so.addVariable('file','<?php the_field("first_video"); ?>');
 					     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
 					  so.addVariable('autostart','false');
 					  so.write('video');
@@ -100,7 +100,7 @@
 							  so.addParam('allowfullscreen','false');
 							  so.addParam('allowscriptaccess','always');
 							  so.addParam('wmode','opaque');
-							  so.addVariable('file','http://davesfiles.s3.amazonaws.com/march16_mp_promo.mp4');
+							  so.addVariable('file','<?php the_field("second_video"); ?>');
 							     so.addVariable('skin','http://s3.amazonaws.com/Fortunebuilders/jwmediaplayer/mediaplayer-57-licensed/glow.zip');
 							  so.addVariable('autostart','false');
 							  so.write('video2');

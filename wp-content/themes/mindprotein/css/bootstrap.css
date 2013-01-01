@@ -147,7 +147,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #3c3c3c;
+  color: #8f8f8f;
   background-color: #ffffff;
 }
 a {
@@ -1281,7 +1281,7 @@ select:focus:required:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #626262;
+  color: #b5b5b5;
 }
 .help-block {
   display: block;
@@ -3759,6 +3759,9 @@ Project Name: Mind Protein
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
+.sanchez {
+  font-family: 'Sanchez', sans-serif;
+}
 /* ...................................the header*/
 header {
   border-top: solid 2px #424242;
@@ -3768,18 +3771,16 @@ header {
   padding-top: 7px;
 }
 #top-nav {
-  padding-bottom: 2px;
+  height: 30px;
   font-size: 12px;
   text-transform: uppercase;
 }
 #top-nav img {
   padding: 0px 5px 6px 0px;
 }
-#top-nav ul.nav {
-  margin-right: 10px;
-}
 #top-nav ul.nav li {
   margin-left: -15px;
+  text-align: right;
 }
 #top-nav ul.nav li a {
   color: #797979;
@@ -3796,12 +3797,24 @@ header {
   border: 0px;
 }
 #middle-nav {
-  padding-top: 50px;
+  padding-top: 55px;
   padding-bottom: 12px;
   text-transform: uppercase;
 }
-#middle-nav ul li {
-  padding-left: 2px;
+#middle-nav li.current_page_item,
+#middle-nav li.current-menu-item {
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #ffb300;
+}
+#middle-nav li {
+  margin-left: 55px;
+}
+#middle-nav li:first-child {
+  margin-left: 0;
+}
+#middle-nav li a {
+  padding: 0;
 }
 #menuBKtop {
   background-color: #232323;
@@ -3826,7 +3839,7 @@ header {
 #menu-primary_navigation {
   float: right;
 }
-/* ...................................the footer*/
+/* ...................................the footer */
 footer {
   height: 305px;
   color: #797979;
@@ -3872,33 +3885,42 @@ footer a {
   list-style: none;
 }
 /* ...................................the content*/
-/* Section One */
-.section-one {
+.hero-slider {
+  height: 414px;
   border-bottom: solid 5px #ececec;
   background-color: #000;
 }
-.section-one .container {
-  background-color: #8f8f8f;
+.hero-slider .container {
+  background-color: #000000;
   padding: 0;
 }
 /* Second Section */
 .second-section {
-  color: #8f8f8f;
-  border-bottom: solid 1px #d1d1d1;
-  background-color: #fff;
-}
-.second-section .row {
-  padding: 30px 0 42px 0;
-}
-.second-section .row img {
-  position: relative;
-  left: 42%;
-}
-.second-section .row .span4 {
+  margin-top: 30px;
+  padding-bottom: 60px;
   text-align: justify;
-  font-size: 14px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #d1d1d1;
 }
-.second-section .row .span4 .btn-primary {
+.second-section img {
+  display: block;
+  margin: 0 auto;
+}
+.second-section h2 {
+  color: #006e93;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 30px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  margin: 0px;
+  text-align: center;
+}
+.second-section .btn-group {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.second-section .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #d5d5d5;
@@ -3917,39 +3939,22 @@ footer a {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   color: #7b7b7b;
   border: solid 1px #b7b7b7;
-  -moz-box-shadow: 0px 0px 5px #c7c6c6;
   -webkit-box-shadow: 0px 0px 5px #c7c6c6;
+  -moz-box-shadow: 0px 0px 5px #c7c6c6;
   box-shadow: 0px 0px 5px #c7c6c6;
 }
-.second-section .row .span4 .btn-primary:hover,
-.second-section .row .span4 .btn-primary:active,
-.second-section .row .span4 .btn-primary.active,
-.second-section .row .span4 .btn-primary.disabled,
-.second-section .row .span4 .btn-primary[disabled] {
+.second-section .btn-primary:hover,
+.second-section .btn-primary:active,
+.second-section .btn-primary.active,
+.second-section .btn-primary.disabled,
+.second-section .btn-primary[disabled] {
   color: #ffffff;
   background-color: #e0e0e0;
   *background-color: #d3d3d3;
 }
-.second-section .row .span4 .btn-primary:active,
-.second-section .row .span4 .btn-primary.active {
+.second-section .btn-primary:active,
+.second-section .btn-primary.active {
   background-color: #c7c7c7 \9;
-}
-.second-section .row .pad {
-  padding-right: 0px;
-}
-.second-section .row h2 {
-  color: #006e93;
-  font-family: 'Sanchez', sans-serif;
-  font-size: 30px;
-  padding-top: 32px;
-  padding-bottom: 24px;
-  margin: 0px;
-  text-align: center;
-}
-.second-section .row div {
-  padding-top: 23px;
-  padding-bottom: -90px;
-  text-align: center;
 }
 /* Third Section */
 .third-section {
@@ -5622,30 +5627,12 @@ img.alignright,
 img.aligncenter {
   margin-bottom: 12px;
 }
-.navbar #middle-nav li.current_page_item,
-.navbar #middle-nav li.current-menu-item {
-  padding-bottom: 5px;
-  border-bottom: 5px solid #ffb300;
-}
-.navbar #middle-nav li {
-  margin-left: 55px;
-}
-.navbar #middle-nav li:first-child {
-  margin-left: 0;
-}
-.navbar #middle-nav li a {
-  padding: 0;
-}
 #video2 {
   margin-left: 23px;
   padding: 15px 0 10px 0;
 }
 .caseStudiesThree {
   margin-bottom: 55px;
-}
-#middle-nav {
-  padding-top: 60px;
-  padding-bottom: 0;
 }
 #tweet ul {
   list-style: none;
@@ -5698,18 +5685,6 @@ a.read-more {
 .video-thumbs a img {
   width: 135px;
   height: 75px;
-}
-.second-section p {
-  margin-bottom: 0;
-}
-.second-section .btn-group {
-  display: block;
-}
-.section-one {
-  height: 414px;
-}
-.section-one .container {
-  background-color: #000000;
 }
 .small-articles {
   padding-left: 30px;
@@ -5837,7 +5812,6 @@ ul.list6 a:hover {
   padding-right: 20px;
   font: normal 12px/14px Verdana;
   width: 550px;
-  height: 414px;
   overflow: auto;
   color: #ffffff;
   line-height: 1.2;

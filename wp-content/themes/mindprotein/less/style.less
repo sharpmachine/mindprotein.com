@@ -7,16 +7,15 @@ Project Name: Mind Protein
 	font-family: 'Raleway', sans-serif;
 }
 
+.sanchez {
+	font-family: 'Sanchez', sans-serif;
+}
 
 /* ...................................the header*/
-
-// Header
-
 header {
 	border-top: solid 2px #424242;
 	border-bottom: solid 2px #3b3b3b;
 }
-
 
 // Navigation
 .navbar .nav > li > a
@@ -25,7 +24,7 @@ header {
 	}
 
 #top-nav {
-	padding-bottom: 2px;
+	height: 30px;
 	font-size: 12px;
 	text-transform: uppercase;
 
@@ -34,12 +33,13 @@ header {
 	}
 
 	ul.nav {
-			margin-right: 10px;
 
 		li {
 			margin-left: -15px;
+			text-align: right;
 
 			a {
+
 				color: @grayLight;
 
 			}
@@ -54,11 +54,10 @@ header {
 #img-position {
 
 	img {
- 				position: relative;
- 				top: -16px;
- 				margin-left: -8px;
-
- 			}
+		position: relative;
+		top: -16px;
+		margin-left: -8px;
+	}
 }
 
 .navbar-inner {
@@ -66,16 +65,27 @@ header {
 }
 
 #middle-nav {
-	padding-top: 50px;
+	padding-top: 55px;
 	padding-bottom: 12px;
 	text-transform: uppercase;
 
-	ul {
+	li.current_page_item,
+	li.current-menu-item {
+		margin-bottom: -10px;
+		padding-bottom: 10px;
+		border-bottom: 5px solid @yellow;
+	}
 
-		li {
-			padding-left: 2px;
-			
+	li {
+		margin-left: 55px;
+
+		&:first-child {
+			margin-left: 0;
 		}
+	}
+
+	li a {
+		padding: 0;
 	}
 }
 
@@ -91,11 +101,7 @@ header {
 	float: right;
 }
 
-// Logo
-
-/* ...................................the footer*/
-
-// Footer
+/* ...................................the footer */
 footer {
 	height: 305px;
 	color: @grayLight;
@@ -153,14 +159,15 @@ footer {
 
 /* ...................................the content*/
 
-/* Section One */
+// Hero Slider
 
-.section-one {
+.hero-slider{
+	height: 414px;
 	border-bottom: solid 5px #ececec; 
 	background-color: #000; 
 
 	.container { 
-		background-color: @gray; 
+		background-color: @black; 
 		padding:0;
 	}
 }
@@ -168,51 +175,38 @@ footer {
 /* Second Section */
 
 .second-section {
-	color: @gray;
+	margin-top: 30px;
+	padding-bottom: 60px;
+	text-align: justify;
+	background-color: @white;
 	border-bottom: solid 1px #d1d1d1;
-	background-color: #fff;
 
-	.row {
-			padding: 30px 0 42px 0;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 
-			img {
-				position: relative;
-	 			left: 42%;
-			}
+	h2 {
+		color: @blueDark;
+		font-family: 'Sanchez', sans-serif;
+		font-size: 30px;
+		padding-top: 32px;
+		padding-bottom: 24px;
+		margin: 0px;
+		text-align: center;
+	}
 
-			.span4 {
-				text-align: justify;
-				font-size: 14px;
+	.btn-group {
+		display: block;
+		margin-top: 20px;
+		text-align: center;
+	}
 
-				.btn-primary {
-		  		.buttonBackground(#cecece, #e0e0e0);
-		  		color: #7b7b7b;
-		  		border: solid 1px #b7b7b7;
-		  		-moz-box-shadow: 0px 0px 5px #c7c6c6;
-				  -webkit-box-shadow: 0px 0px 5px #c7c6c6;
-					box-shadow: 0px 0px 5px #c7c6c6;
-
-				}
-			}
-			.pad {
-				padding-right: 0px;
-			}
-
-			h2 {
-				color: @blueDark;
-				font-family: 'Sanchez', sans-serif;
-				font-size: 30px;
-				padding-top: 32px;
-				padding-bottom: 24px;
-				margin: 0px;
-				text-align: center;
-			}
-
-			div {
-				padding-top: 23px;
-				padding-bottom: -90px;
-				text-align: center;
-			}
+	.btn-primary {
+  		.buttonBackground(#cecece, #e0e0e0);
+  		color: #7b7b7b;
+  		border: solid 1px #b7b7b7;
+  		.box-shadow(0px 0px 5px #c7c6c6);
 	}
 }
 
