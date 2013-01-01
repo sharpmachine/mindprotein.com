@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="section-one">
+<div class="hero-slider">
 	<div class="container">
 		<div class="row" >
 			<div class="span12" id="mcts1">
@@ -10,7 +10,7 @@
 							<img src="<?php the_sub_field('hero_banner_image','option') ?>" alt="">
 							<div class="slider-content">
 								<?php the_sub_field('hero_caption','option') ?>
-							</div><!-- .content -->
+							</div><!-- .slider-content -->
 						 </div><!-- .each -->
 			      	<?php endwhile; ?>
 				<?php endif; ?>
@@ -22,7 +22,7 @@
 <div class="second-section">
 	<div class="container">
 		<div class="row">
-			<div class="span4 pad">
+			<div class="span4">
 				<img src="<?php bloginfo('template_directory'); ?>/img/about-us.png">
 				<h2>About Us</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -31,7 +31,7 @@
 					<a href="<?php bloginfo('url'); ?>/about" class="btn btn-primary btn-small">></a>
 				</div>
 			</div>
-			<div class="span4 pad">
+			<div class="span4">
 				<img src="<?php bloginfo('template_directory'); ?>/img/community.png">
 				<h2>Community</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

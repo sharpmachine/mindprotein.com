@@ -31,17 +31,14 @@
 	
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
     	<!-- Le styles -->
+    	<link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
     	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" rel="stylesheet">
     	<link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
     	<!-- Le fav and touch icons -->
-    	<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 		<!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script><![endif]-->
@@ -58,34 +55,38 @@
 		<header>
 
 			<div class="navbar navbar-inverse">
-		    <div id="menuBKtop" class="navbar-inner">
-		      <div class="container">
-		      	<div class="row">
-		      		<div class="span12 hidden-phone" id="top-nav">
-				      	<ul class="nav pull-right">
-									<li><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a></li>
-									<li><a class="contactMenu" href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a></li>
+				<div id="menuBKtop" class="navbar-inner">
+					<div class="container">
+						<div class="row">
+							<div class="span12 hidden-phone" id="top-nav">
+								<ul class="nav pull-right">
+									<li>
+										<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/home-icon.png"> Home</a>
+									</li>
+									<li>
+										<a class="contactMenu" href="<?php bloginfo('url'); ?>/contact"><img src="<?php bloginfo('template_directory'); ?>/img/contact-icon.png"> Contact</a>
+									</li>
 								</ul>
 							</div>
 						</div>
-		      </div>
-		    </div>
-		  </div>
-		  
+					</div>
+				</div>
+			</div>
+
 		 	<div  class="navbar navbar-inverse">
-		    <div id="menuBKmiddle" class="navbar-inner">
-		      <div class="container">
-		      	<div class="row">
-		      		<div class="span5" id="img-position">
-		      			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+		    	<div id="menuBKmiddle" class="navbar-inner">
+		      		<div class="container">
+		      			<div class="row">
+		      				<div class="span5" id="img-position">
+		      					<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+		      				</div>
+		      				<div class="span7" id="middle-nav">
+		      					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
+		      				</div>
+		      			</div>
 		      		</div>
-		      		<div class="span7" id="middle-nav">
-		      			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
-		      		</div>
-		      	</div>
-		      </div>
-		    </div>
-		  </div>
+		    	</div>
+		  	</div>
 		  
 		</header>
 			
