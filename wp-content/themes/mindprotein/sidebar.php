@@ -38,31 +38,34 @@
 			<small>Public +1's</small>
 		</li>
 	</ul>
+<?php if(is_single()): ?>
 
+<?php endif; ?>
 	<hr class="style-two">
 	<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 	<?php endif; // end primary widget area ?>
 </ul>
-
-<h3>Todays Top Articles</h3>
-<?php query_posts('sortby=comment_count&showposts=2'); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="tiny-article">
-	<div class="tiny-post-thumb">	
-		<?php the_post_thumbnail(array(69, 38)); ?>
-	</div>
-	<div class="tiny-article-title">
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		<div class="sm-counter">
-		 <?php $permalink = get_post_permalink(); ?>
-			<span class="likes"><?php echo get_tweets($permalink); ?></span>
-			<span class="retweets">
-				<?php echo get_likes($permalink); ?>
-			</span>
+<?php if(is_single()): ?>
+	<h3>Todays Top Articles</h3>
+	<?php query_posts('sortby=comment_count&showposts=2'); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<div class="tiny-article">
+		<div class="tiny-post-thumb">	
+			<?php the_post_thumbnail(array(69, 38)); ?>
+		</div>
+		<div class="tiny-article-title">
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<div class="sm-counter">
+			 <?php $permalink = get_post_permalink(); ?>
+				<span class="likes"><?php echo get_tweets($permalink); ?></span>
+				<span class="retweets">
+					<?php echo get_likes($permalink); ?>
+				</span>
+			</div>
 		</div>
 	</div>
-</div>
 <?php endwhile; endif; ?>
+<?php endif; ?>
 </div><!-- #primary .widget-area -->
 
 </div><!-- #sidebar -->
