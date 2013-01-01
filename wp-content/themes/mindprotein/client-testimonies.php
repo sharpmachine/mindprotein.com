@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php query_posts('post_type=client_testimonies&showposts=3'); ?>
+			<?php query_posts('post_type=client_testimonies&showposts=3&orderby=menu_order'); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="span4 testimonial">
 					<img src="<?php the_field('client_headshot') ?>" alt="">
