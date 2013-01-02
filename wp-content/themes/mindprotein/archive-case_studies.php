@@ -18,33 +18,29 @@
 <div class="caseStudiesTwo">
 	<div class="container">
 		<div class="row">
-			<div class="span3">
+			<div class="span3 buttons">
 				<a class="btn btn-primary btn-large right-mar">
 					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesAffiliateMarketingIcon.png"><br/>
 					Affiliate Marketing
 				</a>
-				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
-			<div class="span3">
+			<div class="span3 buttons">
 				<a class="btn btn-primary btn-large right-pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesPublisherIcon.png"><br/>
 					Publishing
 				</a>
-				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
-			<div class="span3">
+			<div class="span3 buttons">
 				<a class="btn btn-primary btn-large right-pad">
 					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesInformationIcon.png"> <br/>
 					Information
 				</a>
-				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
-			<div class="span3">
+			<div class="span3 buttons">
 				<a class="btn btn-primary btn-large">
 					<img src="<?php bloginfo('template_directory'); ?>/img/casestudiesBusinessOwnersIcon.png"><br/>
 					Business Owners
 				</a>
-				<img class="littleShadows" src="<?php bloginfo('template_directory'); ?>/img/coachingShadowS2.png">
 			</div>
 		</div>
 	</div>

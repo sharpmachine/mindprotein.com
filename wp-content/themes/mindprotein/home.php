@@ -7,7 +7,7 @@
 		       	<?php if(get_field('hero_unit_banners','option')): ?>
 					<?php while (has_sub_field('hero_unit_banners','option')): ?>
 						<div class="each">	
-							<img src="<?php the_sub_field('hero_banner_image','option') ?>" alt="">
+							<img src="<?php the_sub_field('hero_banner_image','option') ?>">
 							<div class="slider-content">
 								<?php the_sub_field('hero_caption','option') ?>
 							</div><!-- .slider-content -->
@@ -17,7 +17,7 @@
 			</div><!-- #mcts1 -->
 		</div>
 	</div>
-</div>
+</div><!-- .hero-slider -->
 
 <div class="second-section">
 	<div class="container">
@@ -51,15 +51,14 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><!-- .section-two -->
 
 <div class="third-section">
 	<div class="container">
-		<div class="row third-first">
-			<div class="span5">
+		<div class="row case-studies-wrapper">
+			<div class="span5 copy">
 				<h2>Case Studies</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enicom ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-				
 				<div class="btn-group">
 					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">View All Case Studies</a>
 					<a href="<?php bloginfo('url'); ?>/case-studies" class="btn btn-primary btn-medium">></a>
@@ -86,7 +85,6 @@
 							  so.addVariable('autostart','false');
 							  so.write('video');
 							</script>
-
 						</div>
 					</div>
 					<div class="video-thumbs hidden-phone">
@@ -102,8 +100,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row hidden-phone">
+		</div><!--.case-studies-wrapper -->
+		
+		<div class="row latest-tweet hidden-phone">
 			<div class="span1">
 				<img src="<?php bloginfo('template_directory'); ?>/img/twitter-icon.png">
 			</div>
@@ -112,22 +111,22 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><!-- .third-section -->
 
-<div class="fourth-section">
+<div class="blog-posts">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
 				<div class="row">
 					<div class="span9">
 							
-							<?php $featured_query = new WP_Query('showposts=1');
-								while ($featured_query->have_posts()) : $featured_query->the_post();
-								$do_not_duplicate[] = $post->ID 
-								 ?>
+						<?php $featured_query = new WP_Query('showposts=1');
+							while ($featured_query->have_posts()) : $featured_query->the_post();
+							$do_not_duplicate[] = $post->ID 
+							 ?>
 						<div class="post-block">
 							<div class="row">
-								<div class="span9 space9">
+								<div class="span9 post-block-title">
 									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<div>By <span><?php the_author_posts_link(); ?></span>, <?php the_date(); ?></div>
 								</div>
@@ -139,7 +138,7 @@
 								<div class="span4">
 									<?php the_excerpt(); ?>
 								</div>
-								<div class="span2 socialMedia hidden-phone">
+								<div class="span2 socialMedia hidden-phone pull-right">
 									<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
 								</div>
 							</div>

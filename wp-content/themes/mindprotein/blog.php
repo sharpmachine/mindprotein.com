@@ -8,8 +8,8 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="span9" id="rightShadow">
-					<div class="row sticky-post">
-						<?php $featured_query = new WP_Query('showposts=1&orderby=comment_count');
+				<div class="row sticky-post">
+					<?php $featured_query = new WP_Query('showposts=1&orderby=comment_count');
 						while ($featured_query->have_posts()) : $featured_query->the_post();
 						$do_not_duplicate[] = $post->ID 
 						 ?>
@@ -49,7 +49,7 @@ get_header(); ?>
 						</div><!-- .pcd -->
 					</div>
 					
-					<div class="fourth-section">
+					<div class="blog-posts">
 					<?php query_posts('showposts=-1'); ?>
 					<?php while (have_posts()) : the_post();
 					if (in_array ($post->ID, $do_not_duplicate)) continue;
@@ -57,7 +57,7 @@ get_header(); ?>
 					 ?>
 						<div class="post-block">
 							<div class="row">
-								<div class="span9 space9 post-block-title">
+								<div class="span9 post-block-title">
 									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<div>By <span><?php the_author_posts_link(); ?></span>, <?php echo get_the_date(); ?></div>
 								</div>
@@ -76,16 +76,8 @@ get_header(); ?>
 						</div><!-- .post-block -->
 						<?php endwhile; ?>
 					</div>
-
 			</div>
-			<div class="span3 sideBarTopMargin">
-
-				</div>
-			
-			<div class="span3 blogSideBar">
-
 				<?php get_sidebar(); ?>
-			</div>
 		</div>
 	</div>
 </div>
