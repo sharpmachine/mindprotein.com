@@ -69,7 +69,7 @@
 				</div>
 			</div>
 			
-			<div class="span7">
+			<div class="span7 vid">
 				<div class="video-container">
 					<div id="video-player">
 						<div id="video">
