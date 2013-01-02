@@ -42,7 +42,7 @@
 
 		<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 		<!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script><![endif]-->
-	
+		<!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 		<?php
 			if ( is_singular() && get_option( 'thread_comments' ) )
 				wp_enqueue_script( 'comment-reply' );

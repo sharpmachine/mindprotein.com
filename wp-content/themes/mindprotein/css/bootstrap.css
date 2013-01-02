@@ -4250,8 +4250,8 @@ li#text-2 h3.widget-title {
 }
 .tiny-article .tiny-post-thumb {
   float: left;
-  width: 68px;
-  margin-left: 5px;
+  width: 62px;
+  margin-right: 10px;
 }
 .tiny-article .tiny-article-title {
   float: left;
