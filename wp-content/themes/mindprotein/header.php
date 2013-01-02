@@ -73,20 +73,23 @@
 				</div>
 			</div>
 
-		 	<div  class="navbar navbar-inverse">
-		    	<div id="menuBKmiddle" class="navbar-inner">
-		      		<div class="container">
-		      			<div class="row">
-		      				<div class="span5" id="img-position">
-		      					<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
-		      				</div>
-		      				<div class="span7" id="middle-nav">
-		      					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
-		      				</div>
-		      			</div>
-		      		</div>
-		    	</div>
-		  	</div>
+		 	<div class="navbar navbar-inverse">
+		      <div  class="navbar-inner" id="menuBKmiddle">
+		        <div class="container">
+		        	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+         		 	</a>
+         		 	<div id="img-position">
+         		 		<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+         		 	</div>
+		          <div class="nav-collapse collapse" id="middle-nav">
+		            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => new Bootstrap_Menu_Walker ) ); ?>
+		          </div><!--/.nav-collapse -->
+		        </div>
+		      </div>
+		    </div>
 		  
 		</header>
 			
