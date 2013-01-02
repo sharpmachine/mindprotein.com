@@ -3793,6 +3793,7 @@ header {
   position: relative;
   top: -16px;
   margin-left: -8px;
+  margin-bottom: -33px;
 }
 .navbar-inner {
   border: 0px;
