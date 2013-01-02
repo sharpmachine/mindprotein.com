@@ -625,11 +625,6 @@ form#searchform {
 		padding-left: 30px;
 	}
 
-	//.meetteam {
-	//	background-color: @grayLightBK;
-	//	border: solid 1px #e4e4e4;
-	//}
-
 	.meetteam {
 		height: 355px;
 		margin: 2px 0 0 60px;
@@ -644,86 +639,7 @@ form#searchform {
 	}
 }
 
-.aboutthree {
-	padding: 52px 0 74px;
-	border-top: solid 1px #d3d3d3;
-	font-family: 'Sanchez', sans-serif;
-
-	.rightSpace {
-		margin-right: 30px;
-
-	}
-
-	.span12 {
-		margin: 0;
-	}
-
-	h2 {
-		color: @blueDark;
-		font-size: 48px;
-		font-size: 100;
-		font-weight: 100;
-		padding-bottom: 15px;
-		margin: 0px;
-	}
-
-	p {
-		color: @grayDarkerFont;
-		font-size: 18px;
-	}
-
-	.span4 {
-		max-width: 335px;
-		min-height: 254px;
-		margin-left: 0px;
-		margin-top: 45px;
-		padding: 15px 15px 23px 18px;
-		color: @white;
-		text-shadow: 1px -1px #777;
-		#gradient > .vertical(#a4a4a4, #888888);
-		border: solid 1px @grayLighter;
-		.box-shadow(0px 0px 6px 4px #d8d8d8);
-
-		img {
-			margin: 0;
-			padding: 0;
-			float: right;
-			border: solid 6px @white;
-			.border-radius(@radius: 5px);
-			.box-shadow(0px 7px 10px -3px #666);
-		}
-
-		h3 {
-			margin: 0;
-			font-size: 28px;
-			font-weight: 100;
-		}
-
-		.subTitle {
-			margin-top: -4px;
-			margin-bottom: 15px;
-			font-size: 18px;
-			font-weight: 100;
-		}
-
-		blockquote {
-			font-size: 16px;
-			font-weight: 100;
-			line-height: 24px;
-			border-left: 0px;
-			padding-right: 60px;
-		}
-	}
-}
-
 /* ...................................the coaching */
-
-.coaching-page {
-	// a.btn-large {
-	// 	height: 100px;
-	// }
-}
-
 .coachingone {
 	color: #fff;
 	background: url(../img/coachingBG.png);
@@ -1406,9 +1322,10 @@ form#searchform {
 		padding: 16px 15px 23px 18px;
 		color: @white;
 		text-shadow: 1px -1px #777;
-		background: url(../img/testimonialBK.png);
 		border: solid 1px @grayLighter;
 		.box-shadow(0px 0px 6px 4px #d8d8d8);
+		#gradient > .vertical(#A4A4A4, #7F7F7F);
+		// background-color: red;
 
 		img {
 			margin: 0;
@@ -1429,13 +1346,17 @@ form#searchform {
 			margin: 0;
 			font-size: 18px;
 			font-weight: 100;
+			margin-bottom: 15px;
 		}
 
 		blockquote {
-			margin: 15px 36px 0;
+			padding-left: 50px;
 			font-weight: 100;
 			line-height: 24px;
 			border: 0px;
+			background: 
+			 url(../img/quote-left.png) no-repeat top left,
+			 url(../img/quote-right.png) no-repeat bottom right;
 		}
 
 		p {
@@ -1794,8 +1715,8 @@ form#searchform {
 			background-image: url(../img/quotesLeft.png);
 			border-left: 0px;
 			padding-left: 48px;
-		  background-position: top left;
-		  background-repeat: no-repeat;
+			background-position: top left;
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -1849,7 +1770,6 @@ form#searchform {
 	}
 }
 
-
 /* ...................................the image utilities */
 img.size-auto,
 img.size-full,
@@ -1884,29 +1804,4 @@ img.alignleft,
 img.alignright,
 img.aligncenter {
 	margin-bottom: 12px;
-}
-
-
-
-
-
-
-.entry-title {
-	
-}
-
-.entry-meta {
-	
-}
-
-.entry-utility {
-	
-}
-
-.entry-content {
-	
-}
-
-.entry-summary {
-	
 }

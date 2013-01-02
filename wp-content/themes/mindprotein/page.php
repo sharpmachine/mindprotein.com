@@ -5,7 +5,7 @@
 	<div>
 		<div class="container">
 			<div class="row">
-				<div class="span9">
+				<div class="span8">
 					<?php get_template_part( 'loop', 'page' ); ?>
 				</div>
 				<div class="span3">
