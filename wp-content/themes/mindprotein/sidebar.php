@@ -2,11 +2,11 @@
 
 	<ul class="unstyled">
 
-			<li id="search" class="widget-container widget_search">
+			<li id="search" class="widget-container widget_search hidden-tablet">
 				<?php get_template_part('searchform'); ?>
 			</li>
 
-	<hr class="style-two">
+	<hr class="style-two hidden-tablet">
 	
 	<ul class="list6 clearfix">
 		<li class="css3 clearfix">
@@ -39,7 +39,7 @@
 		</li>
 	</ul>
 
-	<hr class="style-two">
+	<hr class="style-two hidden-tablet">
 
 	
 		<?php wp_reset_query(); ?>

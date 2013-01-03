@@ -5,7 +5,10 @@
 	<div>
 		<div class="container">
 			<div class="row">
-				<div class="span8">
+				<div class="span8 hidden-tablet">
+					<?php get_template_part( 'loop', 'page' ); ?>
+				</div>
+				<div class="span12 visible-tablet">
 					<?php get_template_part( 'loop', 'page' ); ?>
 				</div>
 				<div class="span3">

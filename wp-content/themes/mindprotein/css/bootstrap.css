@@ -5203,7 +5203,7 @@ form#searchform input[type="text"] {
   font: lighter 18px/24px 'Sanchez', sans-serif;
 }
 .client-testimonies .testimonial {
-  max-width: 335px;
+  width: 335px;
   height: 256px;
   margin-top: 45px;
   padding: 16px 15px 23px 18px;

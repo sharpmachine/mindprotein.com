@@ -13,16 +13,17 @@
 ?>
 
 <!-- Facebook Like JavaScript SDK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- End Facebook Like JavaScript SDK -->
-
+<div class="fb-likes">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- End Facebook Like JavaScript SDK -->
+</div>
 <div class="loopOne">
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -32,7 +33,7 @@
 		<div class="entry-meta">
 			<?php smm_posted_on(); ?>
 		</div><!-- .entry-meta -->
-		<div class="span3 pull-right">
+		<div class="span3 pull-right fb-sm">
 			<div class="socialMedia">
 				<div class="shareThis">Share This Story</div>
 				<div class="facebook">

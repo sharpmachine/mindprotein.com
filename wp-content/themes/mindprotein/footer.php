@@ -2,10 +2,10 @@
 		<footer>
 			<div class="container">
 				<div class="row footer-top">
-					<div class="span6 footer-menu">
+					<div class="span7 footer-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false, 'menu_class' => 'nav-footer' ) ); ?>
 					</div>
-					<div class="span6 contact-deets pull-right">
+					<div class="span5 contact-deets pull-right">
 						<a href="mailto:support@mindprotein.com">support@mindprotein.com</a> | 877-251-1586
 					</div>
 				</div>
