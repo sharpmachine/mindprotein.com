@@ -72,8 +72,8 @@
     .box-sizing(border-box);
   }
   .row-fluid [class*="offset"]:first-child {
-		margin-left: 0;
-	}
+    margin-left: 0;
+  }
 
   // FORM FIELDS
   // -----------
@@ -111,18 +111,7 @@
     &.fade.in { top: 20px; }
   }
 
-}
-
-
-
-// UP TO LANDSCAPE PHONE
-// ---------------------
-
-
-
-@media (max-width: 480px) {
-
-  #middle-nav {
+   #middle-nav {
 
     li {
       height: 25px;
@@ -143,9 +132,23 @@
 
   #middle-nav li.current_page_item, #middle-nav li.current-menu-item {
     margin-bottom: auto;
-    padding-bottom: auto;
+    padding-bottom: 0;
     border: none;
   }
+
+  // .trending-thumb h4 {
+  //   // width: 419px;
+  //   background: url(../img/flame.png) no-repeat 408px center rgba(0, 0, 0, 0.5);
+  // }
+
+}
+
+
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
 
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
@@ -476,90 +479,6 @@
     margin: 0;
   }
 
-<<<<<<< HEAD
-  // Community
-  .content-page
-  {
-    padding: 0 20px;
-  }
-
-  .content-page #sidebar {
-    float: none;
-    margin: 30px auto;
-  }
-
-  // Blog
-
-  #rightShadow {
-    width: 100%;
-    padding: 0 20px;
-
-    p {
-      text-align: left;
-    }
-  }
-
-  .entireBlog .sticky-post .trendingRN {
-    height: auto;
-  }
-
-  .entireBlog .sticky-post {
-    padding: 0;
-  }
-
-  .trending-thumb {
-    height: 150px;
-  }
-
-  .trending-thumb h4 {
-    width: 340px;
-  }
-
-  .post-block {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .blog-posts .post-block-title {
-    margin-top: 0;
-  }
-
-  .lastest-post {
-    margin: 0;
-  }
-
-  .blog-posts .span2 {
-    width: auto;
-    height: auto;
-    background-color: transparent;
-  }
-
-  .socialMedia ul, ol {
-    margin: 0;
-  }
-
-  .socialMedia .sociable ul {
-    width: 300px;
-    margin: 0 auto;
-
-  }
-
-  #Facebook_Counter, #Twitter_Counter, #LinkedIn_Counter, {
-    width: 80px;
-  }
-
-  #Google_p {
-    width: 60px;
-  }
-
-  .socialMedia .sociable ul li {
-    margin: 0;
-    display: block;
-    float: left;
-    width: auto;
-  }
-
-=======
   // Coaching
   .coachingone .span6 h2 {
     font-size: 24px;
@@ -809,6 +728,76 @@
   }
 
   // Blog
+  #rightShadow {
+    width: 100%;
+    padding: 0 20px;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .entireBlog .sticky-post .trendingRN {
+    height: auto;
+  }
+
+  .entireBlog .sticky-post {
+    padding: 0;
+  }
+
+  .trending-thumb {
+    height: 150px;
+  }
+
+  .trending-thumb h4 {
+ 
+    width: 94.5%;
+    background: url(../img/flame.png) no-repeat 98% center rgba(0, 0, 0, 0.5);
+  }
+
+  .post-block {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .blog-posts .post-block-title {
+    margin-top: 0;
+  }
+
+  .lastest-post {
+    margin: 0;
+  }
+
+  .blog-posts .span2 {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .socialMedia ul, ol {
+    margin: 0;
+  }
+
+  .socialMedia .sociable ul {
+    width: 300px;
+    margin: 0 auto;
+
+  }
+
+  #Facebook_Counter, #Twitter_Counter, #LinkedIn_Counter, {
+    width: 80px;
+  }
+
+  #Google_p {
+    width: 60px;
+  }
+
+  .socialMedia .sociable ul li {
+    margin: 0;
+    display: block;
+    float: left;
+    width: auto;
+  }
 
   // Single Post
   .singlePost .rightShadow {
@@ -851,13 +840,17 @@
   }
 
   // Content Pages
+  .content-page
+  {
+    padding: 0 20px;
+  }
 
   // Sidebar 
   #sidebar {
+    padding-top: 40px;
     float: none;
     margin: 0 auto;
   }
-  
 
   // Footer
   footer {
@@ -895,6 +888,5 @@
       text-align: center;
     }
   }
->>>>>>> dd517699510427cbeaceeb4656b176e43e4b9fc0
 
 }
