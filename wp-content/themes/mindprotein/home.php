@@ -128,7 +128,7 @@
 							<div class="row">
 								<div class="span9 post-block-title">
 									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-									<div>By <span><?php the_author_posts_link(); ?></span>, <?php the_date(); ?></div>
+									<div class="hidden-phone">By <span><?php the_author_posts_link(); ?></span>, <?php the_date(); ?></div>
 								</div>
 							</div>
 							<div class="row lastest-post">

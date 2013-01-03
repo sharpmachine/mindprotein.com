@@ -27,7 +27,7 @@ Template Name: About
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>
 			</div>
-			<div class="span6 darkbox"></div>
+			<div class="span6 darkbox hidden-phone"></div>
 		</div>
 		<div class="row">
 			<div class="span12 dashedborder">
