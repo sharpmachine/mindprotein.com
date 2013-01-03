@@ -30,7 +30,7 @@ get_header(); ?>
 								</div>
 							</div><!-- .sticky-post -->
 						 <?php endwhile; ?>
-						<div class="span3 pcd hidden-tablet">
+						<div class="span3 pcd hidden-tablet hidden-phone">
 							<h3>Popular Community Discussions</h3>
 							<div class="graySpace"></div>
 							<div class="discuss-list">

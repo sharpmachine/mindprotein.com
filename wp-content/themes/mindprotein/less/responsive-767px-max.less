@@ -118,7 +118,34 @@
 // UP TO LANDSCAPE PHONE
 // ---------------------
 
+
+
 @media (max-width: 480px) {
+
+  #middle-nav {
+
+    li {
+      height: 25px;
+      margin-bottom: 2px;
+      a {
+        padding: 5px;
+      }
+    }
+  }
+
+  #menu-primary_navigation {
+    float: none;
+  }
+
+  #middle-nav li {
+    margin-left: 0;
+  }
+
+  #middle-nav li.current_page_item, #middle-nav li.current-menu-item {
+    margin-bottom: auto;
+    padding-bottom: auto;
+    border: none;
+  }
 
   // Smooth out the collapsing/expanding nav
   .nav-collapse {
@@ -343,5 +370,88 @@
   .testimonial blockquote {
     margin: 0;
   }
+
+  // Community
+  .content-page
+  {
+    padding: 0 20px;
+  }
+
+  .content-page #sidebar {
+    float: none;
+    margin: 30px auto;
+  }
+
+  // Blog
+
+  #rightShadow {
+    width: 100%;
+    padding: 0 20px;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .entireBlog .sticky-post .trendingRN {
+    height: auto;
+  }
+
+  .entireBlog .sticky-post {
+    padding: 0;
+  }
+
+  .trending-thumb {
+    height: 150px;
+  }
+
+  .trending-thumb h4 {
+    width: 340px;
+  }
+
+  .post-block {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .blog-posts .post-block-title {
+    margin-top: 0;
+  }
+
+  .lastest-post {
+    margin: 0;
+  }
+
+  .blog-posts .span2 {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .socialMedia ul, ol {
+    margin: 0;
+  }
+
+  .socialMedia .sociable ul {
+    width: 300px;
+    margin: 0 auto;
+
+  }
+
+  #Facebook_Counter, #Twitter_Counter, #LinkedIn_Counter, {
+    width: 80px;
+  }
+
+  #Google_p {
+    width: 60px;
+  }
+
+  .socialMedia .sociable ul li {
+    margin: 0;
+    display: block;
+    float: left;
+    width: auto;
+  }
+
 
 }
