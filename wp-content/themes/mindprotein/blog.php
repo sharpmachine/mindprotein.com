@@ -17,17 +17,18 @@ get_header(); ?>
 								<div class="trending-thumb">
 									<h4>Trending Right Now</h4>
 									<?php the_post_thumbnail('trending'); ?>
+									<div class="clearfix"></div>
 								</div>
-								
+								<div class="clearfix"></div>
+								<div class="blog-content">
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<div class="author-date">By <span><?php the_author_posts_link(); ?></span>, <?php echo get_the_date(); ?></div>
-								
-								<div class="blog-content">
 									<div class="social-media">
 										<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
 									</div>
 									<?php the_excerpt(); ?>
 								</div>
+								<div class="clearfix"></div>
 							</div><!-- .sticky-post -->
 						 <?php endwhile; ?>
 						<div class="span3 pcd hidden-tablet hidden-phone">
