@@ -12,12 +12,7 @@
 					<img src="<?php the_field('client_headshot') ?>" alt="">
 					<h3><?php the_title(); ?></h3>
 					<div class="subTitle"><?php the_field('company'); ?></div>
-					<!-- <div class="left-quote"></div> -->
-					<!-- <div class="testimony"> -->
-						<blockquote><?php the_field('testimony') ?></blockquote>
-					<!-- </div> -->
-					<!-- <div class="right-quote"></div> -->
-					
+					<blockquote><?php the_field('testimony') ?></blockquote>
 				</div>
 			<?php endwhile; else: ?>
 			<p>No testimonies at this time.</p>

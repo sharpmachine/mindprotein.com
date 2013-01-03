@@ -49,7 +49,7 @@
 						<a href="#apply-now" class="btn btn-primary btn-large">></a> 
 					</div>
 					or <span>Explore the Program</span>
-					<img class="imgPositioning" src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
+					<img class="imgPositioning hidden-phone" src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
 				</div>
 			</div>
 			
@@ -145,14 +145,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-					<div>
+					<div class="jp hidden-phone">
 						Join the Coaching Program: 
 						<div class="btn-group">
 							<a href="#apply-now" class="btn btn-primary btn-large">Apply Now</a>
 							<a href="#apply-now" class="btn btn-primary btn-large">></a> 
 						</div>
 						or <span>Explore the Program</span>
-						<img src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png">
+						<img src="<?php bloginfo('template_directory'); ?>/img/coachingOrangeArrow.png" class="hidden-phone">
 					</div>
 				</div>
 			</div>
