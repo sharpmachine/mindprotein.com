@@ -3,13 +3,21 @@
 	Template Name: Blog
 */
 get_header(); ?>
+<?php
+	$temp = $wp_query;
+	$wp_query = null;
+	$wp_query = new WP_Query();
+	$wp_query->query('showposts=5'.'&paged='.$paged);
+?>
 
 <div class="entireBlog">
 	<div class="container">
 		<div class="row">
 			<div class="span9" id="rightShadow">
 				<div class="row sticky-post">
-					<?php $featured_query = new WP_Query('showposts=1&orderby=comment_count');
+				
+					<?php 
+						$featured_query = new WP_Query('showposts=1&orderby=comment_count');
 						while ($featured_query->have_posts()) : $featured_query->the_post();
 						$do_not_duplicate[] = $post->ID 
 						 ?>
@@ -51,7 +59,6 @@ get_header(); ?>
 					</div>
 					
 					<div class="blog-posts">
-					<?php query_posts('showposts=-1'); ?>
 					<?php while (have_posts()) : the_post();
 					if (in_array ($post->ID, $do_not_duplicate)) continue;
 					update_post_caches($post);
@@ -76,8 +83,11 @@ get_header(); ?>
 							</div>
 						</div><!-- .post-block -->
 						<?php endwhile; ?>
+						<?php bootstrap_pagination(); ?>
+						
 					</div>
 			</div>
+			<?php $wp_query = null; $wp_query = $temp;?>
 				<?php get_sidebar(); ?>
 		</div>
 	</div>

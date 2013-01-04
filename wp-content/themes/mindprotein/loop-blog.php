@@ -2,7 +2,7 @@
 	$temp = $wp_query;
 	$wp_query = null;
 	$wp_query = new WP_Query();
-	$wp_query->query('&paged='.$paged);
+	$wp_query->query('showposts=5'.'&paged='.$paged);
 	while ($wp_query->have_posts()) : $wp_query->the_post();
 ?>
 
